@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UK ACM</title>
+
+<style>
+html, body {
+	background-color:#171b20;
+	margin:0;
+	height:100%;
+		position:relative;
+	
+
+}
+
+
+p{
+	color:#fff;
+	line-height:2;
+	font-size:13px;
+	font-family:"Oak";
+	line-height:3.5;
+}
+
+h1 a{
+	font-size:20px;
+	font-family:"Oak";
+	color:#3c4e63;
+	/* 	color:#9b8821;*/
+	margin-left:auto;
+	margin-right:auto;
+	width:550px;
+	letter-spacing:6px;
+	text-decoration: none;
+	  position: relative;
+
+
+}
+
+h1 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  /*bottom: 0;*/
+  left: 0;
+  margin-top:3px;
+  background-color: #3c4e63;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  margin-top:46px;
+}
+
+h1> a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+#main {
+	width:100%;
+	height:100%;
+  position: absolute;
+  z-index:1;
+}
+
+#overlay {
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:100;	
+	
+}
+
+.container{
+	width:600px;
+	height:500px;
+	z-index:10;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative !important;
+	
+}
+
+ul {
+	margin-left:auto;
+	margin-right:auto;
+	width:350px;
+	margin-bottom:40px;
+	
+}
+
+ul li {
+	font-size:15px;
+	font-family:"Oak";
+	color:#fff;
+	letter-spacing:3px;
+	display: inline;
+	text-decoration: none;
+	margin-right:10px;
+	margin-left:10px;
+	
+}
+
+li:first-child {
+	margin-right:10px;
+	margin-left:0px;
+}
+li:last-child {
+	margin-right:0px;
+	margin-left:10px;
+}
+
+
+ul li > a {
+  position: relative;
+  text-decoration: none;
+  color:#fff;
+}
+
+
+ul li > a:before {
+   content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: #3c4e63;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+    margin-top:39px;
+
+}
+
+ul li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+
+#uklogo{
+	margin-top:35px;
+	width:242px;
+	height:36px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:60px;
+
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#header{
+	width:155px;
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:60px;	
+	
+}
+
+::selection {
+  background: #A6A6A6; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #A6A6A6; /* Gecko Browsers */
+}
+
+footer{
+	font-size:12px;
+	text-align:center;
+	color:#F0F0F0;
+	bottom:30px;
+	
+}
+</style>
+
+</head>
+
+<body>
+<div id="main">
+	<div id="overlay">
+	<div id="uklogo">
+     <object  data="./uklogo.svg" type="image/svg+xml"></object>
+	</div>
+    <div id="header">
+     <object  data="./header.svg" type="image/svg+xml"></object>
+    </div>
+<ul>
+	<li> <a href="#">HOME</a></li>
+    <li><a href="www.cathacks.com">CATHACKS</a></li>
+	<li><a href="#">CONTACT</a></li>
+
+    
+</ul>
+<div class="container">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauris suscipit tincidunt. Sed ut ultricies diam. Donec sit amet libero vel mauris ultricies elementum. Nullam erat risus, tempor at congue in, mattis eget urna. Integer finibus, magna ut cursus porttitor, lorem felis cursus odio, sed auctor lacus felis in tortor. Donec auctor vitae metus vehicula iaculis. In finibus, velit eu porta imperdiet, mauris dolor dapibus ante, eu lacinia libero erat a sapien. Sed erat erat, vestibulum sit amet augue pulvinar, luctus finibus metus.
+</p>
+<h1><a href="#">GET INVOLVED ></a> </h1>
+</div>
+<footer>
+	Questions? Email us at contact@acm.uky.edu <br>
+    © University of Kentucky ACM
+</footer>
+</div>
+
+</div>
+
+<script src="./particles.min.js"></script>
+
+<script>
+particlesJS("main", {
+  "particles": {
+    "number": {
+      "value": 50,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#272b2f"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#272b2f"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 7,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#c6c6c6", //c6c6c6 //e1e0e0
+      "opacity": 0.2,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": .3,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": .4
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": .4,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+</script>
+
+
+</body>
+</html>
