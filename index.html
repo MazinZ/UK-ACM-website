@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>UK ACM</title>
+<link rel="stylesheet" href="./animate.css">
 
 <style>
 html, body {
-	background-color:#171b20;
+	background-color:#171b20; /* 161e29*/ /*15212f*/ /*171b20*/
 	margin:0;
 	height:100%;
 		position:relative;
@@ -14,6 +15,10 @@ html, body {
 
 }
 
+ul {
+	list-style: none;
+	padding:0;
+}
 
 p{
 	color:#fff;
@@ -75,6 +80,7 @@ h1> a:hover:before {
 	position:absolute;
 	z-index:100;	
 	
+	
 }
 
 .container{
@@ -84,10 +90,11 @@ h1> a:hover:before {
 	margin-left:auto;
 	margin-right:auto;
 	position:relative !important;
+	overflow:hidden;
 	
 }
 
-ul {
+#mainMenu {
 	margin-left:auto;
 	margin-right:auto;
 	width:350px;
@@ -95,7 +102,7 @@ ul {
 	
 }
 
-ul li {
+#mainMenu li {
 	font-size:15px;
 	font-family:"Oak";
 	color:#fff;
@@ -107,7 +114,7 @@ ul li {
 	
 }
 
-li:first-child {
+#mainMenu li:first-child {
 	margin-right:10px;
 	margin-left:0px;
 }
@@ -117,14 +124,14 @@ li:last-child {
 }
 
 
-ul li > a {
+#mainMenu li > a {
   position: relative;
   text-decoration: none;
   color:#fff;
 }
 
 
-ul li > a:before {
+#mainMenu li > a:before {
    content: "";
   position: absolute;
   width: 100%;
@@ -140,7 +147,7 @@ ul li > a:before {
 
 }
 
-ul li > a:hover:before {
+#mainMenu li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -173,6 +180,11 @@ canvas {
 	
 }
 
+#firstDiv{
+	height:340px;
+	
+}
+
 ::selection {
   background: #A6A6A6; /* WebKit/Blink Browsers */
 }
@@ -185,8 +197,114 @@ footer{
 	text-align:center;
 	color:#F0F0F0;
 	bottom:30px;
-	
+	font-family:"Ancillary";
 }
+
+
+
+
+-webkit-keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-275px); }
+}
+
+@keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-275px); transform: translateY(-275px); }
+}
+
+/*
+-webkit-keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-95%); transform: translateY(-95%); }
+}
+*/
+
+.pt-page-moveToBottom {
+	-webkit-animation: moveToBottom 1.0s ease both;
+	animation: moveToBottom 1.0s ease both;
+}
+
+-webkit-keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(275px); }
+}
+
+@keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(275px); transform: translateY(275px); }
+}
+
+.pt-page-moveToTop {
+	-webkit-animation: moveToTop 1.0s ease both;
+	animation: moveToTop 1.0s ease both;
+}
+
+/*         h1 cycle     */
+
+content {
+  width:237px;
+  font-family:'Oak';
+  color:#ecf0f1;
+  height:66px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-15px;
+  margin-left:-118px;
+  
+ 
+}
+
+.visible {
+  float:left;
+  overflow:hidden;
+  height:70px;   
+}
+
+
+.cycleAnimation {
+  margin-top:0;
+  text-align:left;
+  list-style:none;
+  animation:1s linear 0s normal forwards change;
+  -webkit-animation:1s linear 0s normal forwards change;
+  -moz-animation:6s linear 0s normal none infinite change;
+  -o-animation:6s linear 0s normal none infinite change;
+}
+
+#headerCycle li {
+  line-height:40px;
+  margin:0;
+}
+
+
+@-webkit-keyframes change {
+  0%   {margin-top:0;}
+  15%  {margin-top:0;}
+  25%  {margin-top:-40px;}
+  40%  {margin-top:-40px;}
+  50%  {margin-top:-80px;}
+  65%  {margin-top:-80px;}
+  75%  {margin-top:-40px;}
+  85%  {margin-top:-40px;}
+  100% {margin-top:0;}
+  
+}
+@keyframes change {
+  0%   {margin-top:0;}
+  100%  {margin-top:-72px;}
+
+}
+
+
+/*                      */
+
 </style>
 
 </head>
@@ -200,18 +318,32 @@ footer{
     <div id="header">
      <object  data="./header.svg" type="image/svg+xml"></object>
     </div>
-<ul>
+<ul id="mainMenu">
 	<li> <a href="#">HOME</a></li>
     <li><a href="www.cathacks.com">CATHACKS</a></li>
 	<li><a href="#">CONTACT</a></li>
 
     
 </ul>
-<div class="container">
+<div class="container" >
+<div id="firstDiv">
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauris suscipit tincidunt. Sed ut ultricies diam. Donec sit amet libero vel mauris ultricies elementum. Nullam erat risus, tempor at congue in, mattis eget urna. Integer finibus, magna ut cursus porttitor, lorem felis cursus odio, sed auctor lacus felis in tortor. Donec auctor vitae metus vehicula iaculis. In finibus, velit eu porta imperdiet, mauris dolor dapibus ante, eu lacinia libero erat a sapien. Sed erat erat, vestibulum sit amet augue pulvinar, luctus finibus metus.
 </p>
-<h1><a href="#">GET INVOLVED ></a> </h1>
+<!--<h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></a> </h1>-->
+
+<div class = "content">
+
+<div class="visible">
+<ul id="headerCycle">
+      <li> <h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></h1> </a></li>
+      <li> <h1><a href="#" id="involveHeader" onClick="sweep()">BACK ></h1> </a> </li>
+     </ull
+></div>
+</div>
+
+</div>
+
 </div>
 <footer>
 	Questions? Email us at contact@acm.uky.edu <br>
@@ -220,9 +352,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
 </div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script src="./particles.min.js"></script>
+<script> /*$( document ).ready(function() {
+$('body').delay(1200).queue(function(){
+        $('#firstDiv').addClass('pt-page-moveToTop').clearQueue();
+});
+});*/
 
+slideOneVisible = true;
+ firstTime = true;
+function sweep() {
+		$('#headerCycle').addClass('cycleAnimation');
+
+		if(slideOneVisible){
+			
+	   if (!firstTime){
+		   $('#firstDiv').removeClass('pt-page-moveToBottom');
+	   }
+	   $('#firstDiv').addClass('pt-page-moveToTop');
+	   slideOneVisible = false;
+	   firstTime = false;
+		}
+		else{
+		$('#firstDiv').removeClass('pt-page-moveToTop');
+		 $('#firstDiv').addClass('pt-page-moveToBottom');
+		}
+	
+}
+</script>
 <script>
 particlesJS("main", {
   "particles": {
