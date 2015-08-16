@@ -7,7 +7,7 @@
 
 <style>
 html, body {
-	background-color:#17181a; /* 161e29*/ /*15212f*/ /*171b20*/
+	background-color:#17181a; /* 161e29*/ /*15212f*/ /*171b20*/ /*17181a*/
 	margin:0;
 	height:100%;
 		position:relative;
@@ -214,18 +214,6 @@ footer{
 	to { -webkit-transform: translateY(-275px); transform: translateY(-275px); }
 }
 
-/*
--webkit-keyframes moveToTop {
-	from { }
-	to { -webkit-transform: translateY(-100%); }
-}
-
-@keyframes moveToTop {
-	from { }
-	to { -webkit-transform: translateY(-95%); transform: translateY(-95%); }
-}
-*/
-
 .pt-page-moveToBottom {
 	-webkit-animation: moveToBottom 1.0s ease both;
 	animation: moveToBottom 1.0s ease both;
@@ -237,8 +225,8 @@ footer{
 }
 
 @keyframes moveToBottom {
-	from { }
-	to { -webkit-transform: translateY(275px); transform: translateY(275px); }
+	from { margin-top:-275px;}
+	to { margin-top:0; }
 }
 
 .pt-page-moveToTop {
@@ -269,38 +257,48 @@ content {
 }
 
 
-.cycleAnimation {
-  margin-top:0;
-  text-align:left;
-  list-style:none;
-  animation:1s linear 0s normal forwards change;
-  -webkit-animation:1s linear 0s normal forwards change;
-  -moz-animation:6s linear 0s normal none infinite change;
-  -o-animation:6s linear 0s normal none infinite change;
-}
 
 #headerCycle li {
   line-height:40px;
   margin:0;
 }
 
-
-@-webkit-keyframes change {
-  0%   {margin-top:0;}
-  15%  {margin-top:0;}
-  25%  {margin-top:-40px;}
-  40%  {margin-top:-40px;}
-  50%  {margin-top:-80px;}
-  65%  {margin-top:-80px;}
-  75%  {margin-top:-40px;}
-  85%  {margin-top:-40px;}
-  100% {margin-top:0;}
-  
+.cycleAnimation {
+  margin-top:0;
+  text-align:left;
+  list-style:none;
+  animation:1s linear 0s normal forwards up;
+  -webkit-animation:1s linear 0s normal forwards up;
+  -moz-animation:6s linear 0s normal none infinite up;
+  -o-animation:6s linear 0s normal none infinite up;
 }
-@keyframes change {
+
+.cycleAnimationDown {
+  margin-top:0;
+  text-align:left;
+  list-style:none;
+  animation:1s linear 0s normal forwards down;
+  -webkit-animation:1s linear 0s normal forwards down;
+  -moz-animation:6s linear 0s normal none infinite down;
+  -o-animation:6s linear 0s normal none infinite down;
+}
+
+@-webkit-keyframes up {
   0%   {margin-top:0;}
   100%  {margin-top:-72px;}
+}
+@keyframes up {
+  0%   {margin-top:0;}
+  100%  {margin-top:-72px;}
+}
 
+@-webkit-keyframes down {
+  0%   {margin-top:-72px;}
+  100%  {margin-top:0px;}
+}
+@keyframes down {
+  0%   {margin-top:-72px;}
+  100%  {margin-top:0px;}
 }
 
 
@@ -337,8 +335,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
 
 <div class="visible">
 <ul id="headerCycle">
-      <li> <h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></h1> </a></li>
-      <li> <h1><a href="#" id="involveHeader" onClick="sweep()">BACK ></h1> </a> </li>
+      <li> <h1><a href="#" id="involveHeader" onClick="sweepUp()">GET INVOLVED ></h1> </a></li>
+      <li> <h1><a href="#" id="involveHeader" onClick="sweepDown()">BACK ></h1> </a> </li>
      </ul>
 </div>
 </div>
@@ -368,23 +366,36 @@ $('#main').backstretch("./background.jpg",{});
 
 slideOneVisible = true;
  firstTime = true;
-function sweep() {
-		$('#headerCycle').addClass('cycleAnimation');
+function sweepUp() {
+	  if (!firstTime){
+	  	  $('#headerCycle').removeClass('cycleAnimationDown');
+	  }
+	  $('#headerCycle').addClass('cycleAnimation');
+	  $('#firstDiv').addClass('pt-page-moveToTop');
 
-		if(slideOneVisible){
-			
-	   if (!firstTime){
-		   $('#firstDiv').removeClass('pt-page-moveToBottom');
-	   }
-	   $('#firstDiv').addClass('pt-page-moveToTop');
-	   slideOneVisible = false;
-	   firstTime = false;
-		}
-		else{
-		 $('#firstDiv').addClass('pt-page-moveToBottom');
-		}
-	
 }
+
+function sweepDown() {
+	$('#headerCycle').removeClass('cycleAnimation');
+	$('#headerCycle').addClass('cycleAnimationDown');
+	$('#firstDiv').addClass('pt-page-moveToBottom');
+	$('#firstDiv').removeClass('pt-page-moveToTop');
+	firstTime = false;
+}
+
+/*$(document).ready(function() {
+var firstDiv = $('#headerCycle');
+$('#headerCycle').on('click', function() {
+    $(this).toggle(function() {
+        firstDiv.removeClass('cycleAnimationDown').addClass('cycleAnimation');
+    }, function() {
+        firstDiv.removeClass('cycleAnimation').addClass('cycleAnimationDown');
+    }).trigger('click');
+});
+});
+*/
+
+
 </script>
 <script>
 particlesJS("main", {
