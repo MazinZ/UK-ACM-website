@@ -42,6 +42,6 @@
 	C150.9,30.5,150.3,30,150.3,29.3z M151.6,30.3c0.6,0,1-0.5,1-1.1c0-0.6-0.5-1.1-1-1.1c-0.6,0-1,0.5-1,1.1
 	C150.5,29.9,151,30.3,151.6,30.3z M151.3,30h-0.2v-1.5h0.6c0.3,0,0.5,0.1,0.5,0.4c0,0.3-0.2,0.4-0.4,0.4l0.4,0.6H152l-0.4-0.6h-0.3
 	C151.3,29.4,151.3,30,151.3,30z M151.6,29.2c0.2,0,0.4,0,0.4-0.2c0-0.2-0.2-0.2-0.3-0.2h-0.3v0.5H151.6z"/>
-<line class="outlines" fill="none" stroke="#3c4e64" stroke-width="2" stroke-miterlimit="10" x1="70.3" y1="18.5" x2="3" y2="18.5"/>
-<line class="outlines" fill="none" stroke="#3c4e64" stroke-width="2" stroke-miterlimit="10" x1="171.7" y1="17.3" x2="239" y2="17.3"/>
+<line class="outlines" fill="none" stroke="#1d2937" stroke-width="4" stroke-miterlimit="10" x1="70.3" y1="18.5" x2="3" y2="18.5"/>
+<line class="outlines" fill="none" stroke="#1d2937" stroke-width="4" stroke-miterlimit="10" x1="171.7" y1="17.3" x2="239" y2="17.3"/>
 </svg>

@@ -7,11 +7,12 @@
 
 <style>
 html, body {
-	background-color:#171b20; /* 161e29*/ /*15212f*/ /*171b20*/
+	background-color:#17181a; /* 161e29*/ /*15212f*/ /*171b20*/
 	margin:0;
 	height:100%;
 		position:relative;
-	
+	background-size: 1280px 800px;
+    background-repeat: no-repeat;
 
 }
 
@@ -31,12 +32,12 @@ p{
 h1 a{
 	font-size:20px;
 	font-family:"Oak";
-	color:#3c4e63;
-	/* 	color:#9b8821;*/
+	color:#fff;
+	/* 	color:#3c4e63;*/
 	margin-left:auto;
 	margin-right:auto;
 	width:550px;
-	letter-spacing:6px;
+	letter-spacing:3px;
 	text-decoration: none;
 	  position: relative;
 
@@ -84,7 +85,7 @@ h1> a:hover:before {
 }
 
 .container{
-	width:600px;
+	width:700px;
 	height:500px;
 	z-index:10;
 	margin-left:auto;
@@ -97,7 +98,7 @@ h1> a:hover:before {
 #mainMenu {
 	margin-left:auto;
 	margin-right:auto;
-	width:350px;
+	width:361px;
 	margin-bottom:40px;
 	
 }
@@ -106,7 +107,7 @@ h1> a:hover:before {
 	font-size:15px;
 	font-family:"Oak";
 	color:#fff;
-	letter-spacing:3px;
+	letter-spacing:5px;
 	display: inline;
 	text-decoration: none;
 	margin-right:10px;
@@ -115,12 +116,12 @@ h1> a:hover:before {
 }
 
 #mainMenu li:first-child {
-	margin-right:10px;
+	margin-right:20px;
 	margin-left:0px;
 }
 li:last-child {
 	margin-right:0px;
-	margin-left:10px;
+	margin-left:20px;
 }
 
 
@@ -319,8 +320,8 @@ content {
      <object  data="./header.svg" type="image/svg+xml"></object>
     </div>
 <ul id="mainMenu">
-	<li> <a href="#">HOME</a></li>
-    <li><a href="www.cathacks.com">CATHACKS</a></li>
+	<li> <a href="./index.html">HOME</a></li>
+    <li><a href="http://www.cathacks.com">CATHACKS</a></li>
 	<li><a href="#">CONTACT</a></li>
 
     
@@ -328,7 +329,7 @@ content {
 <div class="container" >
 <div id="firstDiv">
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauris suscipit tincidunt. Sed ut ultricies diam. Donec sit amet libero vel mauris ultricies elementum. Nullam erat risus, tempor at congue in, mattis eget urna. Integer finibus, magna ut cursus porttitor, lorem felis cursus odio, sed auctor lacus felis in tortor. Donec auctor vitae metus vehicula iaculis. In finibus, velit eu porta imperdiet, mauris dolor dapibus ante, eu lacinia libero erat a sapien. Sed erat erat, vestibulum sit amet augue pulvinar, luctus finibus metus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauris suscipit tincidunt. Sed ut ultricies diam. Donec sit amet libero vel mauris ultricies elementum. Nullam erat risus, tempor at congue in, mattis eget urna. Integer finibus, magna ut cursus porttitor, lorem felis cursus odio, sed auctor lacus felis in tortor. Donec auctor vitae metus vehicula iaculis. In finibus, velit eu porta imperdiet, mauris dolor dapibus ante, eu lacinia libero erat a sapien. Sed erat erat,
 </p>
 <!--<h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></a> </h1>-->
 
@@ -338,21 +339,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
 <ul id="headerCycle">
       <li> <h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></h1> </a></li>
       <li> <h1><a href="#" id="involveHeader" onClick="sweep()">BACK ></h1> </a> </li>
-     </ull
-></div>
+     </ul>
 </div>
+</div>
+<!--<img src="./map.jpg" />-->
 
 </div>
 
 </div>
-<footer>
+<!--<footer>
 	Questions? Email us at contact@acm.uky.edu <br>
     © University of Kentucky ACM
-</footer>
+</footer>-->
 </div>
 
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="./jquery.backstretch.min.js"></script>
 
 <script src="./particles.min.js"></script>
 <script> /*$( document ).ready(function() {
@@ -360,6 +364,7 @@ $('body').delay(1200).queue(function(){
         $('#firstDiv').addClass('pt-page-moveToTop').clearQueue();
 });
 });*/
+$('#main').backstretch("./background.jpg",{});
 
 slideOneVisible = true;
  firstTime = true;
@@ -376,7 +381,6 @@ function sweep() {
 	   firstTime = false;
 		}
 		else{
-		$('#firstDiv').removeClass('pt-page-moveToTop');
 		 $('#firstDiv').addClass('pt-page-moveToBottom');
 		}
 	
