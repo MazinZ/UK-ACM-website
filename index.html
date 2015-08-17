@@ -29,6 +29,11 @@ p{
 	line-height:3.5;
 }
 
+p a {
+	color:#fff;
+	
+}
+
 h1 a{
 	font-size:20px;
 	font-family:"Oak";
@@ -384,7 +389,39 @@ textarea{
 
 }
 
+ .button {
+  background-color:#17181a;
+  cursor: pointer;
+    -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  color:#fff;
+  margin-left:15px;
+  border: 1px solid #FFF;
+  font-family:"Oak";
+  font-style:normal;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+}
+#contact .button {
+  width:200px;
+  height:70px;  
+  line-height:68px;
+}
 
+.container .button {
+  width:150px;
+  height:50px;  
+  line-height:48px;
+}
+
+
+.button:hover{
+  color:#17181a;
+  background-color:#fff;
+}
 
 /*                          */
 </style>
@@ -424,8 +461,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
      </ul>
 </div>
 </div>
-<p style="margin-top:100px; font-family:"Ancillary";">The UKACM meets each thursday blah blah blah . Join us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a">Engineering Annex </a> asfsadf</p>
-<input type="text" name="Name" id="name" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
+<p style="margin-top:100px; font-size:15px; line-height:1.5;"> UKACM meetings occur each thursday from 6:00PM-7:00PM and are open to all UK students. You can find us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a">Engineering Annex </a>. <br><br>  Join our mailing list:</p>
+<input type="email" name="Name" id="name" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
+<input type="submit" value="ADD ME" class="button submit" >
+
 </div>
 
 </div>
@@ -442,9 +481,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
  <h2 style="width:145px;"> CONTACT </h2>
  <form>
  <input type="text" name="Name" id="name" placeholder="NAME" required="" class="defaultstate activewidth activetext activetextlocked">
- <input type="text" name="Email" id="email" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
+ <input type="email" name="Email" id="email" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
  <textarea name="Message" id="message" cols="35" rows="5" placeholder="" required class="defaultstate activewidth activeheight"></textarea>
- <input type="submit" value="SEND MESSAGE" class="button submit activewidth activetext activetextlocked active">
+ <input type="submit" value="SEND MESSAGE" class="button submit">
+
  </form>
  </div>
 
