@@ -68,11 +68,43 @@ h1> a:hover:before {
 }
 
 
+
+h2 {
+	font-family:"Oak";
+	font-size:24px;
+	color:#fff;
+	letter-spacing:7px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h3 {
+	font-family:"Oak";
+	font-size:18px;
+	color:#fff;
+}
+
+
+
 #main {
 	width:100%;
 	height:100%;
   position: absolute;
   z-index:1;
+}
+
+#mainWrapper {
+	width:100%;
+	height:100%;
+	border-bottom: 1px solid #212326;
+
+}
+
+#contact {
+	width:100%;
+	height:100%;
+	position:relative;
+	background-color:#17181a;
 }
 
 #overlay {
@@ -86,7 +118,7 @@ h1> a:hover:before {
 
 .container{
 	width:700px;
-	height:500px;
+	height:325px;
 	z-index:10;
 	margin-left:auto;
 	margin-right:auto;
@@ -184,6 +216,14 @@ canvas {
 #firstDiv{
 	height:340px;
 	
+	
+}
+
+#contactContainer{
+	
+	width:700px;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 ::selection {
@@ -267,8 +307,8 @@ content {
   margin-top:0;
   text-align:left;
   list-style:none;
-  animation:1s linear 0s normal forwards up;
-  -webkit-animation:1s linear 0s normal forwards up;
+  animation:.5s linear 0s normal forwards up;
+  -webkit-animation:.5s linear 0s normal forwards up;
   -moz-animation:6s linear 0s normal none infinite up;
   -o-animation:6s linear 0s normal none infinite up;
 }
@@ -277,8 +317,8 @@ content {
   margin-top:0;
   text-align:left;
   list-style:none;
-  animation:1s linear 0s normal forwards down;
-  -webkit-animation:1s linear 0s normal forwards down;
+  animation:.5s linear 0s normal forwards down;
+  -webkit-animation:.5s linear 0s normal forwards down;
   -moz-animation:6s linear 0s normal none infinite down;
   -o-animation:6s linear 0s normal none infinite down;
 }
@@ -304,11 +344,55 @@ content {
 
 /*                      */
 
+
+/*        forms            */
+
+
+input, textarea {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 0;
+    color: #FFF;
+    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
+    line-height: 2;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    resize: none;
+    border-radius: 0;
+	font-family:"Ancillary";
+	font-style:italic;
+	font-size:14px;
+	
+}
+
+input {
+    border-bottom: 1px solid #FFF;
+    font-weight: 300;
+}
+
+
+textarea{
+	 border: 1px solid #FFF;
+
+}
+
+
+
+/*                          */
 </style>
 
 </head>
 
 <body>
+<div id="mainWrapper" >
 <div id="main">
 	<div id="overlay">
 	<div id="uklogo">
@@ -340,8 +424,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
      </ul>
 </div>
 </div>
-<!--<img src="./map.jpg" />-->
-
+<p style="margin-top:100px; font-family:"Ancillary";">The UKACM meets each thursday blah blah blah . Join us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a">Engineering Annex </a> asfsadf</p>
+<input type="text" name="Name" id="name" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
 </div>
 
 </div>
@@ -353,18 +437,46 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nunc sed mauri
 
 </div>
 
+<!-- end main wrapper -->
+</div>
+<div id="contact">
+ <div id = "contactContainer" style="margin-top:150px;">
+ <h2 style="width:145px;"> CONTACT </h2>
+ <form>
+ <input type="text" name="Name" id="name" placeholder="NAME" required="" class="defaultstate activewidth activetext activetextlocked">
+ <input type="text" name="Email" id="email" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
+ <textarea name="Message" id="message" cols="35" rows="5" placeholder="" required class="defaultstate activewidth activeheight"></textarea>
+ <input type="submit" value="SEND MESSAGE" class="button submit activewidth activetext activetextlocked active">
+ </form>
+ </div>
+</div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="./jquery.backstretch.min.js"></script>
 
 <script src="./particles.min.js"></script>
+<script src="./jquery.onepage-scroll.min.js"></script>
+
 <script> /*$( document ).ready(function() {
 $('body').delay(1200).queue(function(){
         $('#firstDiv').addClass('pt-page-moveToTop').clearQueue();
 });
 });*/
-$('#main').backstretch("./background.jpg",{});
+$('#main').backstretch("./background2.jpg",{});
+//$("#main").onepage_scroll();
+//$("#contact").onepage_scroll();
+	var scrollBottom = $(window).scrollTop() + $(window).height();
 
-slideOneVisible = true;
+$("#mainMenu li:last-child").click(function(e) {
+	e.preventDefault();
+
+$('html, body').animate({
+    scrollTop: $("#main").offset().top +  $(window).height()
+}, 1000);
+
+});
+
  firstTime = true;
 function sweepUp() {
 	  if (!firstTime){
