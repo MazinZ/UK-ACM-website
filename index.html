@@ -272,7 +272,7 @@ footer{
 
 
 
--webkit-keyframes moveToTop {
+@-webkit-keyframes moveToTop {
 	from { }
 	to { -webkit-transform: translateY(-275px); }
 }
@@ -287,9 +287,9 @@ footer{
 	animation: moveToBottom 1.0s ease both;
 }
 
--webkit-keyframes moveToBottom {
-	from { }
-	to { -webkit-transform: translateY(275px); }
+@-webkit-keyframes moveToBottom {
+	from { margin-top:-275px;}
+	to { margin-top:0;}
 }
 
 @keyframes moveToBottom {
