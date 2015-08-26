@@ -179,7 +179,7 @@ h3 {
 	margin-right:20px;
 	margin-left:0px;
 }
-li:last-child {
+#mainMenu li:last-child {
 	margin-right:0px;
 	margin-left:20px;
 }
@@ -462,6 +462,8 @@ textarea{
     filter: alpha(opacity=1);
 }
 
+
+
 </style>
 
 </head>
@@ -548,7 +550,7 @@ $('body').delay(1200).queue(function(){
 $('#main').backstretch("./background2.jpg",{});
 //$("#main").onepage_scroll();
 //$("#contact").onepage_scroll();
-	var scrollBottom = $(window).scrollTop() + $(window).height();
+var scrollBottom = $(window).scrollTop() + $(window).height();
 
 $("#mainMenu li:last-child").click(function(e) {
 	e.preventDefault();
