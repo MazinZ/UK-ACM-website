@@ -47,7 +47,7 @@ ul {
 p{
 	color:#fff;
 	line-height:2;
-	font-size:13px;
+	font-size:15px;
 	font-family:"Oak";
 	line-height:3.5;
 }
@@ -146,12 +146,14 @@ h3 {
 
 .container{
 	width:700px;
-	height:335px;
+	height:250px;
 	z-index:10;
 	margin-left:auto;
 	margin-right:auto;
 	position:relative !important;
 	overflow:hidden;
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 	
 }
 
@@ -275,12 +277,12 @@ footer{
 
 @-webkit-keyframes moveToTop {
 	from { }
-	to { -webkit-transform: translateY(-275px); }
+	to { -webkit-transform: translateY(-200px); }
 }
 
 @keyframes moveToTop {
 	from { }
-	to { -webkit-transform: translateY(-275px); transform: translateY(-275px); }
+	to { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
 }
 
 .pt-page-moveToBottom {
@@ -289,12 +291,12 @@ footer{
 }
 
 @-webkit-keyframes moveToBottom {
-	from { margin-top:-275px;}
+	from { margin-top:-200px;}
 	to { margin-top:0;}
 }
 
 @keyframes moveToBottom {
-	from { margin-top:-275px;}
+	from { margin-top:-200px;}
 	to { margin-top:0; }
 }
 
@@ -322,7 +324,7 @@ content {
 .visible {
   float:left;
   overflow:hidden;
-  height:70px;   
+  height:80px;   
 }
 
 
@@ -463,6 +465,14 @@ textarea{
 }
 
 
+input:focus { 
+	font-style:normal;
+}
+textarea:focus { 
+	font-style:normal;
+}
+
+
 
 </style>
 
@@ -488,7 +498,7 @@ textarea{
 
 <div class="container" >
 <div id="firstDiv">
-<p>
+<p  style="margin-bottom:0;">
 ACM at UK is an experience. We strive to foster a strong community for computing students at the University of Kentucky. We're most famous for our annual hackathon, CatHacks, but we also put on several other events throughout the year.
 </p>
 <!--<h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></a> </h1>-->
@@ -502,7 +512,7 @@ ACM at UK is an experience. We strive to foster a strong community for computing
      </ul>
 </div>
 </div>
-<p style="margin-top:100px; font-size:15px; line-height:1.5;"> UK ACM meetings occur each thursday from 6:00PM-7:00PM and are open to all UK students. You can find us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a">Engineering Annex </a>. <br><br>  Join our mailing list:</p>
+<p style="margin-top:80px; font-size:15px; line-height:1.5;"> UK ACM meetings occur each thursday from 6:00PM-7:00PM and are open to all UK students. You can find us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a">Engineering Annex </a>. <br><br>  Join our mailing list:</p>
 <input type="email" name="Name" id="name" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
 <input type="submit" value="ADD ME" class="button submit" >
 
@@ -566,16 +576,21 @@ function sweepUp() {
 	  if (!firstTime){
 	  	  $('#headerCycle').removeClass('cycleAnimationDown');
 	  }
+	  	$('.container').css("height","303px");
+
 	  $('#headerCycle').addClass('cycleAnimation');
 	  $('#firstDiv').addClass('pt-page-moveToTop');
 
 }
 
 function sweepDown() {
+			$('.container').css("height","250px");
+
 	$('#headerCycle').removeClass('cycleAnimation');
 	$('#headerCycle').addClass('cycleAnimationDown');
 	$('#firstDiv').addClass('pt-page-moveToBottom');
 	$('#firstDiv').removeClass('pt-page-moveToTop');
+
 	firstTime = false;
 }
 
