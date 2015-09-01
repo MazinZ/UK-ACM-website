@@ -116,19 +116,19 @@ h3 {
 
 #main {
 	width:100%;
-	height:100%;
+	height:110%;
   position: absolute;
   z-index:1;
 }
 
 #mainWrapper {
 	width:100%;
-	height:100%;
+	height:110%;
 	border-bottom: 1px solid #212326;
 
 }
 
-#contact {
+#team {
 	width:100%;
 	height:100%;
 	position:relative;
@@ -137,7 +137,7 @@ h3 {
 
 #overlay {
 	width:100%;
-	height:100%;
+	height:110%;
 	position:absolute;
 	z-index:100;	
 	
@@ -160,7 +160,7 @@ h3 {
 #mainMenu {
 	margin-left:auto;
 	margin-right:auto;
-	width:400px;
+	width:345px;
 	margin-bottom:40px;
 	
 }
@@ -250,7 +250,7 @@ canvas {
 	
 }
 
-#contactContainer{
+#teamContainer{
 	
 	width:700px;
 	margin-right:auto;
@@ -431,7 +431,7 @@ textarea{
   margin-right:auto;
   position:relative;
 }
-#contact .button {
+#team .button {
   width:200px;
   height:70px;  
   line-height:68px;
@@ -493,7 +493,7 @@ textarea:focus {
 <ul id="mainMenu">
 	<li> <a href="./index.html">HOME</a></li>
     <li><a href="http://www.cathacks.com">CATHACKS</a></li>
-	<li><a href="#">CONTACT</a></li>
+	<li><a href="#">TEAM</a></li>
 </ul>
 
 <div class="container" >
@@ -540,7 +540,7 @@ ACM at UK is an experience. We strive to foster a strong community for computing
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_d2090fb8da3cd4292151bb495_b33bf0f457" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="SUBSCRIBE" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button"></div>
     </div>
 </form>
 </div>
@@ -558,16 +558,16 @@ ACM at UK is an experience. We strive to foster a strong community for computing
 
 <!-- end main wrapper -->
 </div>
-<div id="contact">
- <div id = "contactContainer" style="margin-top:150px;">
- <h2 style="width:145px;"> CONTACT </h2>
- <form>
+<div id="team">
+ <div id = "teamContainer" style="margin-top:150px;">
+ <h2 style="width:145px;"> TEAM </h2>
+ <!--<form>
  <input type="text" name="Name" id="name" placeholder="NAME" required="" class="defaultstate activewidth activetext activetextlocked">
  <input type="email" name="Email" id="email" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
  <textarea name="Message" id="message" cols="35" rows="5" placeholder="" required class="defaultstate activewidth activeheight"></textarea>
  <input type="submit" value="SEND MESSAGE" class="button submit">
 
- </form>
+ </form>-->
  </div>
 
 </div>
@@ -590,14 +590,14 @@ $('body').delay(1200).queue(function(){
 });*/
 $('#main').backstretch("./background2.jpg",{});
 //$("#main").onepage_scroll();
-//$("#contact").onepage_scroll();
+//$("#team").onepage_scroll();
 var scrollBottom = $(window).scrollTop() + $(window).height();
 
 $("#mainMenu li:last-child").click(function(e) {
 	e.preventDefault();
 
 $('html, body').animate({
-    scrollTop: $("#main").offset().top +  $(window).height()
+    scrollTop: $("#main").offset().top +  $(window).height() +  $(window).height() * .1
 }, 1000);
 
 });
@@ -607,7 +607,7 @@ function sweepUp() {
 	  if (!firstTime){
 	  	  $('#headerCycle').removeClass('cycleAnimationDown');
 	  }
-	  	$('.container').css("height","303px");
+	  	//$('.container').css("height","303px");
 
 	  $('#headerCycle').addClass('cycleAnimation');
 	  $('#firstDiv').addClass('pt-page-moveToTop');
@@ -615,7 +615,7 @@ function sweepUp() {
 }
 
 function sweepDown() {
-			$('.container').css("height","250px");
+			//$('.container').css("height","250px");
 
 	$('#headerCycle').removeClass('cycleAnimation');
 	$('#headerCycle').addClass('cycleAnimationDown');
