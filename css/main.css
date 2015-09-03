@@ -39,6 +39,9 @@ ul {
 	list-style: none;
 	padding:0;
 }
+strong {
+	text-decoration:underline;
+}
 
 p{
 	color:#fff;
