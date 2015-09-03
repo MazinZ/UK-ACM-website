@@ -153,7 +153,6 @@ h3 {
 
 .container{
 	width:700px;
-	height:380px;
 	z-index:10;
 	margin-left:auto;
 	margin-right:auto;
@@ -254,7 +253,7 @@ canvas {
 }
 
 #firstDiv{
-	height:340px;
+	/*height:340px;*/
 	
 	
 }
@@ -525,7 +524,12 @@ h6 {
 	
 	
 }
+@media (min-width: 751px) {
+	#container{
+		height:380px;
+	}
 
+}
 
 @media (max-width: 750px) {
 	#overlay{
@@ -581,7 +585,6 @@ h6 {
 	}
 	.container{
 		width:60%;	
-		display:none;
 	}
 	.teamBox {
 		float:none;
@@ -820,8 +823,11 @@ function sweepDown() {
 	firstTime = false;
 }
 
+	
+
 if (255 + $("#container").height() > window.innerHeight){
-	$('#mobilepage').css('height', window.innerHeight-$("#container").height());
+	$('#mobilepage').css('height', $("#container").height()-window.innerHeight+255);
+	console.log("test");
 }
 
 
