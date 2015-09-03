@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>UK ACM</title>
 <link rel="stylesheet" href="./animate.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
@@ -128,9 +129,15 @@ h3 {
 
 }
 
+#mobilepage {
+	width:100%;
+	position:relative;
+	background-color:#17181a;
+}
+
 #team {
 	width:100%;
-	height:100%;
+	min-height:100%;
 	position:relative;
 	background-color:#17181a;
 }
@@ -150,8 +157,8 @@ h3 {
 	z-index:10;
 	margin-left:auto;
 	margin-right:auto;
-	position:relative !important;
 	overflow:hidden;
+	position:relative !important;
 	  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 	
@@ -241,6 +248,8 @@ canvas {
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:60px;	
+		padding-right:25px;
+
 	
 }
 
@@ -252,7 +261,7 @@ canvas {
 
 #teamContainer{
 	
-	width:700px;
+	width:750px;
 	margin-right:auto;
 	margin-left:auto;
 }
@@ -472,6 +481,132 @@ textarea:focus {
 	font-style:normal;
 }
 
+h4 {
+	color:#fff;
+	line-height:2;
+	font-size:14px;
+	font-family:"Oak";
+	line-height:3.5;
+	letter-spacing:3px;
+	border-bottom: 1px solid #3c4e63;
+	padding-bottom: 20px;
+	display:inline;
+}
+
+h5 {
+	color:#fff;
+	line-height:2;
+	font-size:12px;
+	font-family:"Oak";
+	line-height:3.5;
+	letter-spacing:3px;
+}
+
+
+h6 {
+	color:#3c4e63;
+	line-height:2;
+	font-size:12px;
+	font-family:"Oak";	
+	
+}
+.teamBox {
+	width:250px;	
+	height:150px;
+	float:left;
+	text-align:center;
+	display:inline-block;
+	margin-top:40px;
+
+}
+
+#mazin {
+	width:333px;	
+	
+	
+}
+
+
+@media (max-width: 750px) {
+	#overlay{
+		min-height:100% !important;	
+	}
+	#main{
+		min-height:100% !important;	
+	}
+	#mainWrapper{
+		min-height:100% !important;	
+	}
+	.container{
+		width:60%;	
+	}
+	.teamBox {
+		float:none;
+		margin-left:auto;
+		margin-right:auto;	
+	}
+	#teamContainer {
+		width:250px;
+	}
+	#mazin {
+		width:250px;	
+		text-align:center;	
+
+	}
+	.container{
+		overflow:visible;		
+	}
+	
+	#firstP{
+	}
+	#mobilepage{
+		display:inline-block;
+		
+	}
+	#mainWrapper {
+		border:none;
+	}	
+	
+}
+
+@media (max-width: 400px) {
+	#overlay{
+		min-height:100% !important;	
+	}
+	#main{
+		min-height:100% !important;	
+	}
+	#mainWrapper{
+		min-height:100% !important;	
+	}
+	.container{
+		width:60%;	
+		display:none;
+	}
+	.teamBox {
+		float:none;
+		margin-left:auto;
+		margin-right:auto;	
+	}
+	#teamContainer {
+		width:250px;
+	}
+	p {
+		font-size:14px;	
+	}
+	#mainMenu li{
+		font-size:12px;	
+	}
+	#mainMenu {
+		width:290px;
+		
+	}
+
+	
+
+}
+
+
 
 
 </style>
@@ -482,6 +617,7 @@ textarea:focus {
 <div id="mainWrapper" >
 <div id="main">
 	<div id="overlay">
+    
 	<div id="uklogo">
       <a href="http://www.uky.edu" target="_blank"></a>
      <object data="./uklogo.svg" type="image/svg+xml"></object>
@@ -496,16 +632,17 @@ textarea:focus {
 	<li><a href="#">TEAM</a></li>
 </ul>
 
-<div class="container" >
+<div class="container" id="container" >
 <div id="firstDiv">
 <!--<h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></a> </h1>-->
 
 <div class = "content">
 
-<p>
+<p id="firstP">
 ACM at UK is an experience. We strive to foster a strong community for computing students at the University of Kentucky. We're most famous for our annual hackathon, CatHacks, but we also put on several other events throughout the year.
 </p>
-<p> UK ACM meetings occur each Thursday from 6:00PM-7:00PM and are open to all UK students. You can find us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a">Engineering Annex</a>.</p>
+<p> UK ACM meetings occur each Thursday from 6:00PM-7:00PM and are open to all UK students. You can find us in the <a href="https://www.google.com/maps/place/Engineering+Annex,+Lexington,+KY+40508/@38.0371088,-84.5042774,17z/data=!3m1!4b1!4m2!3m1!1s0x884244bee41aa84d:0x5710be1a6efc3d1a" target="_blank">Engineering Annex</a>.</p>
+
 
 <div class="visible">
 <ul id="headerCycle">
@@ -552,22 +689,59 @@ ACM at UK is an experience. We strive to foster a strong community for computing
 </div>
 
 
-</div>
+
+
+</div> <!-- end overlay -->
 
 </div>
+
+	
 
 <!-- end main wrapper -->
 </div>
+<div id="mobilepage">
+    
+    </div>
 <div id="team">
- <div id = "teamContainer" style="margin-top:150px;">
- <h2 style="width:145px;"> TEAM </h2>
- <!--<form>
- <input type="text" name="Name" id="name" placeholder="NAME" required="" class="defaultstate activewidth activetext activetextlocked">
- <input type="email" name="Email" id="email" placeholder="EMAIL ADDRESS" required="" class="defaultstate activewidth activetext activetextlocked">
- <textarea name="Message" id="message" cols="35" rows="5" placeholder="" required class="defaultstate activewidth activeheight"></textarea>
- <input type="submit" value="SEND MESSAGE" class="button submit">
-
- </form>-->
+ <div id = "teamContainer" style="margin-top:120px;">
+ <h2 style="width:158px;"> OFFICERS </h2>
+ 
+    <div class = "row" > 
+	<div class = "teamBox" > 
+		<h4> PRESIDENT </h4>
+    	<h5> ETHAN GILL</h5>
+    </div>
+    
+    <div class = "teamBox">
+   		<h4> VICE-PRESIDENT </h4>
+    	<h5>DEAN CROCKETT</h5>
+    </div>
+    
+    <div class = "teamBox">
+    	<h4>TREASURER </h4>
+    	<h5>IRSYAD HANIF</h5>
+	</div>
+    </div>
+    
+   	<div class = "row" > 
+    <div class = "teamBox" > 
+		<h4> SECRETARY </h4>
+    	<h5> BRITTANY HONAKER </h5>
+    </div>
+    
+    <div class = "teamBox">
+   		<h4> STUDENT REPRESENTATIVE </h4>
+    	<h5>JONAH STARLING</h5>
+    </div>
+    
+    <div class = "teamBox">
+    	<h4>FACULTY ADVISOR </h4>
+    	<h5>DR. JUREK JAROMCZYK </h5>
+	</div>
+    <h6 style="width:10px; margin-left:auto; margin-right:auto;"> ... </h6>
+	<h5 id="mazin" style=" margin-left:auto; margin-right:auto;"> WEB DEVELOPMENT BY MAZIN ZAKARIA</h5>
+ 	</div>
+    
  </div>
 
 </div>
@@ -588,6 +762,27 @@ $('body').delay(1200).queue(function(){
         $('#firstDiv').addClass('pt-page-moveToTop').clearQueue();
 });
 });*/
+
+function calculateMainSize(){
+	if (window.innerWidth <= 767) {
+        $('#main').css('margin-bottom', ("#overlay").height()-window.innerHeight);
+		$('#mainWrapper').css('height', ("#overlay").height()-window.innerHeight);
+
+    } 
+       
+    
+}
+/*$(document).ready(function(){
+	calculateMainSize();
+
+}
+
+$(window).resize(function() {
+	calculateMainSize();
+}*/
+
+
+$("#overlay").height()
 $('#main').backstretch("./background2.jpg",{});
 //$("#main").onepage_scroll();
 //$("#team").onepage_scroll();
@@ -624,6 +819,11 @@ function sweepDown() {
 
 	firstTime = false;
 }
+
+if (255 + $("#container").height() > window.innerHeight){
+	$('#mobilepage').css('height', window.innerHeight-$("#container").height());
+}
+
 
 /*$(document).ready(function() {
 var firstDiv = $('#headerCycle');
