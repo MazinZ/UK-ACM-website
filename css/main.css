@@ -374,8 +374,8 @@ input, textarea {
     outline: none;
     border: 0;
     color: #FFF;
-    margin-bottom: 28px;
     margin-bottom: 2.8rem;
+	/*margin-bottom:5px;*/
     line-height: 2;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
@@ -429,7 +429,7 @@ textarea{
 .container .button {
   width:150px;
   height:50px;  
-  line-height:48px;
+  line-height:50px;
 }
 
 
