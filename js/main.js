@@ -20,6 +20,7 @@ $('html, body').animate({
 
 });
 
+secondPageVisible = false;
 firstTime = true;
 function sweepUp() {
 	  if (!firstTime){
@@ -27,7 +28,7 @@ function sweepUp() {
 	  }
 	  $('#headerCycle').addClass('cycleAnimation');
 	  $('#firstDiv').addClass('pt-page-moveToTop');
-
+	  secondPageVisible = !secondPageVisible;
 }
 
 function sweepDown() {
@@ -36,11 +37,16 @@ function sweepDown() {
 	$('#firstDiv').addClass('pt-page-moveToBottom');
 	$('#firstDiv').removeClass('pt-page-moveToTop');
 	firstTime = false;
+	secondPageVisible = !secondPageVisible;
+
 }
 
 function resizeContainer() {
 if (255 + $("#container").height() > window.innerHeight){
 	$('#mobilepage').css('height', $("#container").height()-window.innerHeight+150);
+	if (secondPageVisible) {
+		sweepDown();	
+	}
 }
 else {
 	

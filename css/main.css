@@ -329,8 +329,8 @@ content {
   list-style:none;
   animation:.5s linear 0s normal forwards up;
   -webkit-animation:.5s linear 0s normal forwards up;
-  -moz-animation:6s linear 0s normal none infinite up;
-  -o-animation:6s linear 0s normal none infinite up;
+  -moz-animation:.5s linear 0s normal forwards up;
+  -o-animation:.5s linear 0s normal forwards up;
 }
 
 .cycleAnimationDown {
@@ -339,8 +339,8 @@ content {
   list-style:none;
   animation:.5s linear 0s normal forwards down;
   -webkit-animation:.5s linear 0s normal forwards down;
-  -moz-animation:6s linear 0s normal none infinite down;
-  -o-animation:6s linear 0s normal none infinite down;
+  -moz-animation:.5s linear 0s normal forwards down;
+  -o-animation:.5s linear 0s normal forwards down;
 }
 
 @-webkit-keyframes up {
@@ -351,6 +351,7 @@ content {
   0%   {margin-top:0;}
   100%  {margin-top:-72px;}
 }
+
 
 @-webkit-keyframes down {
   0%   {margin-top:-72px;}
