@@ -601,8 +601,12 @@ h6 {
 	#mainMenu li{
 		font-size:12px;	
 	}
+	#mainMenu li:first-child{
+				padding-left:11px;
+
+	}
 	#mainMenu {
-		width:270px;
+		width:281px;
 		padding:10px;
 		
 	}
