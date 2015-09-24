@@ -1,0 +1,1219 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CatHacks II</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+
+<script src="./js/jquery.singlePageNav.min.js"></script>
+<script src="./particles.min.js"></script>
+<script src="./js/faq.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./css/faq.css">
+
+
+<style>
+html, body {
+        height: 100%;
+        margin: 0px;
+			list-style-type: none !important;
+
+    }
+#home {
+	height:85%;	
+	margin:0;
+	background-color:#fff; /*efefef*/
+	width:100%;
+	position:relative;
+	
+	 -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+}
+#about {
+	margin:0;
+	background-color:#fff;
+	width:100%;
+	position:relative;
+	 min-height: 150%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 150vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+#apply {
+	height:100%;	
+	margin:0;
+	background-color:#efefef;
+	width:100%;
+	position:relative;
+
+}
+
+#faq {
+	height:100%;	
+	margin:0;
+	background-color:#efefef;
+	width:100%;
+	position:relative;
+	list-style-type: none !important;
+	
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+ 	min-height: 100vh; /* These two lines are counted as one :-)       */
+
+   display: flex;
+   align-items: center;
+
+}
+
+
+#sponsors {
+	min-height:100%;	
+	margin:0;
+	background-color:#fff;
+	width:100%;
+	position:relative;
+}
+.navreplace{
+	background-color:#fff;
+	border:0;
+	/*border-bottom-style: solid;
+    border-bottom-width: 15px;
+	border-bottom-width:4px;
+	border-bottom-color:#efefef;*/
+	    /*box-shadow:  0 4px 2px -2px #efefef;*/
+
+}
+
+.navbar-brand{
+	font-size:38px;
+	-webkit-font-smoothing: antialiased !important;
+	font-family: DINCondensed-Bold, sans-serif;
+	color:#508dad !important;
+	padding-left:15%;
+	line-height:110px;
+	height:110px;
+	padding-top:0px;
+	
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+	
+	
+	
+}
+
+#navid.affix {
+    position: fixed;
+    top: 0px;
+	width: 100%;
+	z-index:100;  
+
+}
+/*@font-face {
+	font-family:DCB;
+	src: url('../fonts/DCB.ttf');
+}*/
+.navbar-nav li a{
+	font-size:16px;	
+	color:#508dad !important;
+	font-family:Ancillary, sans-serif;
+	font-weight:300;
+	line-height:110px;
+	height:110px;
+	padding-top:0px;
+
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  
+}
+.navbar{
+	margin-bottom:0px;
+}
+
+
+#mydiv {
+	position:absolute;
+	top: 35%;
+	left: 50%;
+	width:311px;
+	height:430px; /*461*/
+	margin-top: -155.5px; /*set to a negative number 1/2 of your height*/
+	margin-left: -155.5px; /*set to a negative number 1/2 of your width*/
+	/*border: 1px solid #ccc;*/
+  	background-image:url(img/logo.svg);
+	background-repeat:no-repeat;
+	background-color:#fff;
+	
+
+}
+#textbox {
+	width:311px;
+	height:150px;	
+	text-align:center;
+	margin-top:350px;
+	font-family: DINCondensed-Bold,sans-serif;
+	color:#508dad;
+	font-weight:100;
+	line-height: .2 !important;
+
+}
+
+h1 {
+	font-size:50px;
+	-webkit-font-smoothing: antialiased;
+	font-family: DINCondensed-Bold, sans-serif;
+	line-height: .3 !important;
+	color:#508dad !important;
+
+}
+h2 {
+	font-size:30px;	
+
+}
+h3 {
+	color:#508dad;
+	-webkit-font-smoothing: antialiased;
+	font-family: DCBA, sans-serif;
+	line-height: .3 !important;
+	font-size:26px !important;
+}
+
+h4 {
+	color: #a0a0a0;	
+	-webkit-font-smoothing: antialiased;
+	font-family: "Aleo", Georgia, Serif;
+	font-size:18px;
+	
+}
+
+#registration {
+	
+	width:310px;
+	height:67px;
+  	background-image:url(img/registration.png);
+	background-repeat:no-repeat;
+	position: absolute;
+ 	 top: 50%;
+  	left: 50%;
+	 margin: -33.5px 0 0 -155px;
+
+}
+
+
+
+#aboutTextbox2 {
+	width:320px;
+	height:300px;
+	
+	
+}
+
+.center h1 {
+	margin:0;
+	align:center;
+	margin-bottom:20px;	
+	
+	
+}
+
+.centerVertically {
+	display: inline-block;
+    /* for ie6/7: */
+    *display: inline;
+    zoom: 1;
+}
+
+p {  
+	font-family: "Aleo", Georgia, Serif;
+  	font-weight: 400;
+    text-align: left;	
+	line-height:2;
+	color:#6e6e6e;
+	font-size:18px;
+}
+
+
+@media screen and (min-width: 640px) { 
+	#aboutTextbox2 {
+		width:50%;
+	}
+	p { font-size: 20px  !important; 
+	text-align:center;
+	
+	} 
+}
+@media screen and (min-width: 960px) { p { 	text-align:left; font-size: 21px; } }
+@media screen and (min-width: 1224px) { p {	text-align:left;  font-size: 24px; } }
+
+.center {
+       position: absolute;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       margin: auto;
+  }
+  
+
+.navbar-toggle{
+	margin-top:36px; /*for the mobile nav button to be centered vertically*/
+}
+
+
+
+/*       For navbar animation         */
+li > a {
+  position: relative;
+  text-decoration: none;
+}
+
+
+li > a:before {
+   content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #508dad;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+/*  MOVE NAVBAR LINKS */
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  background-color:#fff;
+  
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+/*                   */
+/*active {
+   content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}*/
+/*                                    */
+
+
+
+/*.active{
+	color: white;
+	background-color: rgba(100,100,100,1);
+	border-left: thick solid rgba(0,255,0,0.5) !important;
+}*/
+
+
+
+
+/*            --------------------           */
+.wrapper { 
+  border : 2px solid #000; 
+  overflow:hidden;
+  width:100%;
+  height:500px;
+}
+
+.wrapper div {
+   min-height: 300px;
+   padding: 10px;
+}
+#one {
+  background-color: #fff;
+  float:left; 
+  margin-right:20px;
+  width:720px;
+  border-right:2px solid #000;
+}
+#two { 
+  background-color: white;
+ /* background-image:url(img/kentucky.svg);*/
+  background-repeat:no-repeat;
+  overflow:hidden;
+  margin:10px;
+  border:2px dashed #ccc;
+  min-height:300px;
+  
+}
+
+@media screen and (max-width: 400px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;    
+  }
+}
+
+
+/*       ------------------               */
+
+
+
+div[class$="-breakpoint"] {
+	bottom:0;
+}
+
+
+
+
+@font-face {
+font-family: 'DCB';
+src: 
+url('./DCB.ttf') format('truetype');
+
+}
+/*url('../fonts/DCB.eot?#iefix') format('embedded-opentype');*/
+
+@font-face { font-family: 'DINCondensed-Bold'; src: url('/css/webfont/DINCondensed-Bold.eot?#iefix') format('embedded-opentype'), url('/css/webfont/DINCondensed-Bold.woff') format('woff'), url('/css/webfont/DINCondensed-Bold.ttf') format('truetype'), url('/css/webfont/DINCondensed-Bold.svg#DINCondensed-Bold') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'SukhumvitSet-Thin'; src: url('/css/webfont/SukhumvitSet-Thin.eot?#iefix') format('embedded-opentype'), url('/css/webfont/SukhumvitSet-Thin.woff') format('woff'), url('/css/webfont/SukhumvitSet-Thin.ttf') format('truetype'), url('/css/webfont/SukhumvitSet-Thin.svg#SukhumvitSet-Thin') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face {
+font-family: 'DCBA';
+src: 
+url('./DCBA.ttf') format('truetype');
+
+}
+
+@font-face {
+	font-family:Ancillary;
+	src: url('./Ancillary-Regular.otf');
+}
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInDown { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+
+::selection {
+  background: #b9b9b9; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #b9b9b9; /* Gecko Browsers */
+}
+
+
+#breadcrumbs {
+    margin: 0em;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	margin-bottom:20px;
+}
+
+#breadcrumbs a {
+    padding: 0.5em;
+	padding-top:1em;
+	padding-bottom:1em;
+	display: inline;
+    border-right: 1px solid #d9d9db;
+	color: #a0a0a0;	
+	-webkit-font-smoothing: antialiased;
+	font-family: "Aleo", Georgia, Serif;
+	font-size:16px;
+	font-weight:400;
+}
+
+@media screen and (max-width: 1075px) {
+	#breadcrumbs a {
+		font-size:12px !important;	
+	}
+	
+}
+.navbar-brand {
+display:none;	
+
+}
+
+@media screen and (max-width: 768px){
+	.navbar-brand{
+		display:block;	
+		
+	}
+	
+}
+
+#breadcrumbs a:last-child {
+    border-right: none;
+}
+
+/*@media (max-width: 1100px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+*/
+@media screen and (max-width: 992px) {
+	.kentucky{
+		display:none;
+	}
+	.col-md-6 h1 {
+		text-align:center;
+		
+	}
+	.col-md-6 p {
+		padding:15px;	
+		
+	}
+	
+}
+
+@media screen and (max-width:320px) {
+	#mydiv{
+	    background-size: 262px 262px;
+		background-position: top center;
+
+	}
+	
+}
+
+
+
+
+#footerTextbox{
+	font-size:14px;
+	color:#a6a6a6;
+	text-align:center;
+	
+}
+
+/*.footer {
+	height:200px;
+	position:relative;
+    background: url(./img/footerright.svg) 120% 20px no-repeat, url(./img/footerleft.svg) -25% 20px no-repeat;
+	background-color:#fff;
+	background-size:50%;
+	overflow:hidden;
+}
+
+@media screen and (max-width:768){
+	.footer {
+		background:#fff;	
+	}	
+	
+}*/
+
+
+
+
+.navbar-nav > .active > a{
+	background-color:#fff;
+	
+}
+
+/* scroll navbar animation */
+.active:after {
+     content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #508dad;
+  visibility: visible;
+  transition: width 2s;
+  -webkit-animation: widen .5s 1;
+  animation: widen 5.s 1;
+}
+
+@-webkit-keyframes widen {
+    0%   { width:0%; /* Google Chrome & Webkit Nightlies */}
+    100% { width:100%;/* Google Chrome & Webkit Nightlies */ }
+}
+/*                       */
+
+
+
+
+/*        apply button            */
+
+
+.hvr-shutter-out-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #efefef;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+    border: solid #5c8caa;
+	border-width: 2px 0;
+  
+}
+.hvr-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #5c8caa;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+  color: white;
+}
+.hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.appSectionButton {
+	width:200px;
+	height:80px;
+	line-height:80px;
+	text-align:center;
+}
+
+
+
+
+/*                                */
+
+
+
+</style>
+</head>
+
+<body data-spy="scroll" data-target="#navid" data-offset="110">
+
+ 	
+ <div id="home" class="container"  >
+  <div id="HOME-breakpoint"> </div>
+ 	<div id="mydiv" class="fadeInDown animated" style="z-index:110;">
+	
+	<div id="textbox"> 
+		<h1>C A T H A C K S II</h1>
+		<h2> FALL 2015</h2>
+	</div>
+	</div>
+    
+	<!--<img class="col-xs-6 col-md-4" style="height:90%;width:90%; opacity:.32; margin-left:0; margin-bottom:0; z-index:-100;" src="./img/icetracefinal.svg" />-->
+    <!--</div>-->
+ </div>
+  <div id="navbarAffix"> </div>
+ <div id="nav-wrapper" style="height:110px;">
+ <nav style="height:110px; z-index:110;" role="navigation" id="navid" class="navbar navbar-default navreplace" >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="#"  class="navbar-brand">C A T H A C K S II </a>
+
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav"  >
+               <!-- <li class="active"><a href="#">Home</a></li>-->
+                <li id="HOME" class="active" ><a href="#home">HOME</a></li>
+                <li id="ABOUT"><a href="#about">ABOUT</a></li>
+                <li id="FAQ"><a href="#faq">FAQ</a></li>
+                <li id="APPLY"><a href="#apply">APPLY</a></li>
+                <li id="SPONSORS" ><a href="#sponsors">SPONSORS</a></li>
+
+            </ul>
+          
+        </div>
+    </nav>
+ </div>
+	<div id="about" class= "container">
+      <div id="ABOUT-breakpoint"> </div>
+
+            <!--<h3 style="margin:30px 0px 0px 15%; float:left;" > ABOUT</h3>-->
+
+    	<!--<div id="aboutBar" style="margin:30px 0px 0px 0px; height:10px; width:75%; background-color:#508dad; float:right;"></div>-->
+		<!--<div id="aboutTextbox2" class = "center "> 
+        <h1 style="text-align:center; display:block;"> A B O U T </h1>
+        	<p><underline>Bitcamp</underline> is a place for exploration. You will have 36 hours to delve into your curiosities, learn something new, and make something awesome. With world-class mentors and hundreds of fellow campers, you're in for an amazing time. If you're ready for an adventure, see you by the fire!</p> 
+        </div>-->
+        <div class="row">
+        <div class = "col-md-1"> </div>
+       	 <div class="col-md-6"><h1 style=" display:block;">A B O U T </h1>
+        	<p>Bitcamp is a place for exploration. You will have 36 hours to delve into your curiosities, learn something new, and make something awesome. With world-class mentors and hundreds of fellow campers, you're in for an amazing time. If you're ready for an adventure, see you by the fire!</p> <br></div>
+         <div class="col-md-4">
+         	        <div class="row">
+
+        			 <div class = "col-md-12 " style="background-color:#fff;"> 
+                     		<div id="breadcrumbs">
+   								 <a >LEXINGTON, KY</a>
+   								 <a >THIS NOVEMBER</a>
+							</div>
+                     </div>
+						</div>
+         <img class = "kentucky" src="./img/kentucky.svg" />
+         </div>
+        </div>
+        		<!--<h2 style="display:inline; text-align:center;"> LEXINGTON, KY </h2> <h2 style="display:inline; text-align:center;"> MID NOVEMBER </h2>-->
+
+    </div>
+    
+    
+    
+    <div id="faq" class="container">
+           	<div id="FAQ-breakpoint"> </div>
+
+      <!--FAQ-->
+    	<div class = "center" style="width:80%; height:80%;">
+        
+        
+         <section class="faq">
+	<ul class="categories">
+		<li><a class="selected" href="#basics">Basics</a></li>
+		<li><a href="#mobile">Mobile</a></li>
+		<li><a href="#account">Account</a></li>
+		<li><a href="#payments">Payments</a></li>
+	</ul> <!-- categories -->
+
+	<div class="faq-items">
+		<ul id="basics" class="faq-group" style="display:block;">
+			<li class="faq-title"><h2>Basics</h2></li>
+			<li>
+				<a class="trigger" href="#0">How do I change my password?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quidem blanditiis delectus corporis, possimus officia sint sequi ex tenetur id impedit est pariatur iure animi non a ratione reiciendis nihil sed consequatur atque repellendus fugit perspiciatis rerum et. Dolorum consequuntur fugit deleniti, soluta fuga nobis. Ducimus blanditiis velit sit iste delectus obcaecati debitis omnis, assumenda accusamus cumque perferendis eos aut quidem! Aut, totam rerum, cupiditate quae aperiam voluptas rem inventore quas, ex maxime culpa nam soluta labore at amet nihil laborum? Explicabo numquam, sit fugit, voluptatem autem atque quis quam voluptate fugiat earum rem hic, reprehenderit quaerat tempore at. Aperiam.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How do I sign up?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi?</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">Can I remove a post?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How do reviews work?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+		</ul> <!-- faq-group -->
+
+		<ul id="mobile" class="faq-group">
+			<li class="faq-title"><h2>Mobile</h2></li>
+			<li>
+				<a class="trigger" href="#0">How does syncing work?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quidem delectus rerum eligendi mollitia, repudiandae quae beatae. Et repellat quam atque corrupti iusto architecto impedit explicabo repudiandae qui similique aut iure ipsum quis inventore nulla error aliquid alias quia dolorem dolore, odio excepturi veniam odit veritatis. Quo iure magnam, et cum. Laudantium, eaque non? Tempore nihil corporis cumque dolor ipsum accusamus sapiente aliquid quis ea assumenda deserunt praesentium voluptatibus, accusantium a mollitia necessitatibus nostrum voluptatem numquam modi ab, sint rem.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How do I upload files from my phone or tablet?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempore, placeat quisquam rerum! Eligendi fugit dolorum tenetur modi fuga nisi rerum, autem officiis quaerat quos. Magni quia, quo quibusdam odio. Error magni aperiam amet architecto adipisci aspernatur! Officia, quaerat magni architecto nostrum magnam fuga nihil, ipsum laboriosam similique voluptatibus facilis nobis? Eius non asperiores, nesciunt suscipit veniam blanditiis veritatis provident possimus iusto voluptas, eveniet architecto quidem quos molestias, aperiam eum reprehenderit dolores ad deserunt eos amet. Vero molestiae commodi unde dolor dicta maxime alias, velit, nesciunt cum dolorem, ipsam soluta sint suscipit maiores mollitia assumenda ducimus aperiam neque enim! Quas culpa dolorum ipsam? Ipsum voluptatibus numquam natus? Eligendi explicabo eos, perferendis voluptatibus hic sed ipsam rerum maiores officia! Beatae, molestias!</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How do I link to a file or folder?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+		</ul> <!-- faq-group -->
+
+		<ul id="account" class="faq-group">
+			<li class="faq-title"><h2>Account</h2></li>
+			<li>
+				<a class="trigger" href="#0">How do I change my password?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis earum autem consectetur labore eius tenetur esse, in temporibus sequi cum voluptatem vitae repellat nostrum odio perspiciatis dolores recusandae necessitatibus, unde, deserunt voluptas possimus veniam magni soluta deleniti! Architecto, quidem, totam. Fugit minus odit unde ea cupiditate ab aperiam sed dolore facere nihil laboriosam dolorum repellat deleniti aliquam fugiat laudantium delectus sint iure odio, necessitatibus rem quisquam! Ipsum praesentium quam nisi sint, impedit sapiente facilis laudantium mollitia quae fugiat similique. Dolor maiores aliquid incidunt commodi doloremque rem! Quaerat, debitis voluptatem vero qui enim, sunt reiciendis tempore inventore maxime quasi fugiat accusamus beatae modi voluptates iste officia esse soluta tempora labore quisquam fuga, cum. Sint nemo iste nulla accusamus quam qui quos, vero, minus id. Eius mollitia consequatur fugit nam consequuntur nesciunt illo id quis reprehenderit obcaecati voluptates corrupti, minus! Possimus, perspiciatis!</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How do I delete my account?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tempore soluta, minus magnam non blanditiis dolore, in nam voluptas nobis minima deserunt deleniti id animi amet, suscipit consequuntur corporis nihil laborum facere temporibus. Qui inventore, doloribus facilis, provident soluta voluptas excepturi perspiciatis fugiat odit vero! Optio assumenda animi at! Assumenda doloremque nemo est sequi eaque, ipsum id, labore rem nisi, amet similique vel autem dolore totam facilis deserunt. Mollitia non ut libero unde accusamus praesentium sint maiores, illo, nemo aliquid?</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How do I change my account settings?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">I forgot my password. How do I reset it?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at aspernatur iure facere ab a corporis mollitia molestiae quod omnis minima, est labore quidem nobis accusantium ad totam sunt doloremque laudantium impedit similique iste quasi cum! Libero fugit at praesentium vero. Maiores non consequuntur rerum, nemo a qui repellat quibusdam architecto voluptatem? Sequi, possimus, cupiditate autem soluta ipsa rerum officiis cum libero delectus explicabo facilis, odit ullam aperiam reprehenderit! Vero ad non harum veritatis tempore beatae possimus, ex odio quo.</p>
+				</div> <!-- faq-content -->
+			</li>
+		</ul> <!-- faq-group -->
+
+		<ul id="payments" class="faq-group">
+			<li class="faq-title"><h2>Payments</h2></li>
+			<li>
+				<a class="trigger" href="#0">Can I have an invoice for my subscription?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quidem delectus rerum eligendi mollitia, repudiandae quae beatae. Et repellat quam atque corrupti iusto architecto impedit explicabo repudiandae qui similique aut iure ipsum quis inventore nulla error aliquid alias quia dolorem dolore, odio excepturi veniam odit veritatis. Quo iure magnam, et cum. Laudantium, eaque non? Tempore nihil corporis cumque dolor ipsum accusamus sapiente aliquid quis ea assumenda deserunt praesentium voluptatibus, accusantium a mollitia necessitatibus nostrum voluptatem numquam modi ab, sint rem.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">Why did my credit card or PayPal payment fail?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusantium dolorem vel, ad, nostrum natus eos, nemo placeat quos nisi architecto rem dolorum amet consectetur molestiae reprehenderit cum harum commodi beatae necessitatibus. Mollitia a nostrum enim earum minima doloribus illum autem, provident vero et, aspernatur quae sunt illo dolorem. Corporis blanditiis, unde, neque, adipisci debitis quas ullam accusantium repudiandae eum nostrum quis! Velit esse harum qui, modi ratione debitis alias laboriosam minus eaque, quod, itaque labore illo totam aut quia fuga nemo. Perferendis ipsa laborum atque assumenda tempore aspernatur a eos harum non id commodi excepturi quaerat ullam, explicabo, incidunt ipsam, accusantium quo magni ut! Ratione, magnam. Delectus nesciunt impedit praesentium sed, aliquam architecto dolores quae, distinctio consectetur obcaecati esse, consequuntur vel sit quis blanditiis possimus dolorum. Eaque architecto doloremque aliquid quae cumque, vitae perferendis enim, iure fugiat, soluta aut!</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">Why does my bank statement show multiple charges for one upgrade?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+		</ul> <!-- faq-group -->
+
+		<ul id="privacy" class="faq-group">
+			<li class="faq-title"><h2>Privacy</h2></li>
+			<li>
+				<a class="trigger" href="#0">Can I specify my own private key?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quidem delectus rerum eligendi mollitia, repudiandae quae beatae. Et repellat quam atque corrupti iusto architecto impedit explicabo repudiandae qui similique aut iure ipsum quis inventore nulla error aliquid alias quia dolorem dolore, odio excepturi veniam odit veritatis. Quo iure magnam, et cum. Laudantium, eaque non? Tempore nihil corporis cumque dolor ipsum accusamus sapiente aliquid quis ea assumenda deserunt praesentium voluptatibus, accusantium a mollitia necessitatibus nostrum voluptatem numquam modi ab, sint rem.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">My files are missing! How do I get them back?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How can I access my account data?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus magni vero deserunt enim et quia in aliquam, rem tempore voluptas illo nisi veritatis quas quod placeat ipsa! Error qui harum accusamus incidunt at libero ipsum, suscipit dolorum esse explicabo in eius voluptates quidem voluptatem inventore amet eaque deserunt veniam dignissimos excepturi? Dolore, quo amet nostrum autem nemo. Sit nam assumenda, corporis ea sunt distinctio nostrum doloribus alias, beatae nesciunt dolore saepe consequuntur minima eveniet porro dolor officiis maiores ab obcaecati officia enim aliquam. Itaque fuga molestiae hic accusantium atque corporis quia id sequi enim vero? Hic aperiam sint facilis aliquam quia, accusamus tenetur earum totam enim est, error. Iusto, reiciendis necessitatibus molestias. Voluptatibus eos explicabo repellat nesciunt nam vero minima.</p>
+				</div> <!-- faq-content -->
+			</li>
+
+			<li>
+				<a class="trigger" href="#0">How can I control if other search engines can link to my profile?</a>
+				<div class="faq-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+				</div> <!-- faq-content -->
+			</li>
+		</ul> <!-- faq-group -->
+
+		
+	</div> <!-- faq-items -->
+	<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- faq -->
+        
+        
+        
+        
+        
+        
+      
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+    </div> <!-- FAQ END -->
+
+	<div id="apply" class="container">
+      <div id="APPLY-breakpoint"> </div>
+
+	<div id="registration" ></div>
+
+    </div>
+    
+	<div id="sponsors" class="container" style="min-height:100%;"> <!--SPONSORS-->
+
+      
+      	<div class = "center" style="width:90%; height:70%">
+        
+        <div class="row">
+			<h1 style="text-align:center;"> S P O N S O R S  </h1>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+       
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <!--<a class="thumbnail" href="#">-->
+                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
+            </div>
+        </div>
+	</div>
+        	  <div id="SPONSORS-breakpoint"> </div>
+
+	</div> <!--SPONSORS END-->
+	
+   <footer class="footer">
+      <div class="container">
+      </div>
+
+	<div class="span6 offset3" id="footerTextbox"> 
+     &copy; University of Kentucky ACM
+        
+    </div>
+    </footer>
+    
+    <script>
+/*$(document).ready(function() {
+  
+  var height = $('#home').height();
+  console.log(height);
+  $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > height) {
+      $('#navid').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < height+.01) {
+      $('#navid').removeClass('navbar-fixed');
+    }
+  });
+});*/
+
+
+$(document).ready(function(){
+	calculateHomeSize();
+	affix();
+
+});
+
+$(document).scroll(function() {
+	affix();
+	navLinkState();
+});
+function calculateHomeSize() {
+	if (window.innerWidth <= 767) {
+        $('#home').css('height', window.innerHeight);
+    } else {
+        $('#home').css('height', window.innerHeight - $('#nav-wrapper').height());
+    }
+	
+}
+
+function affix() {
+	if ($(window).scrollTop() > $('#navbarAffix').position().top) {
+        $('#navid').addClass('navbar-fixed-top');
+    } else {
+        $('#navid').removeClass('navbar-fixed-top');
+    }	
+}
+
+$(window).resize(function() {
+    var viewportWidth = $(window).width();
+	calculateHomeSize();
+
+		//$('#nav-wrapper').height($("#navid").height());
+//$("#nav-wrapper").css({"min-height":$("#navid").height()+"px"});
+
+});
+
+function navLinkState() {
+	var sections = $('container')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+ 
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+ 
+  sections.each(function() {
+    var top = $(this).offset().top,
+        bottom = ('#sponsors').offset().top;
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+ 
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id').toUpperCase()+'"]').addClass('active');
+	  console.log($(this).attr('id'));
+    }
+  });
+});	
+	
+	
+}
+
+$("#navid li").click(function(e) {
+	e.preventDefault();
+		var idName = "#" + $(this).attr('id').toLowerCase();
+	$('html, body').animate({
+		scrollTop: $(idName).offset().top -110
+	}, 1000);
+});
+
+particlesJS("home", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#c6c6c6"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 9,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#c6c6c6", //c6c6c6 //e1e0e0
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+
+</script>
+
+
+</body>
+</html>

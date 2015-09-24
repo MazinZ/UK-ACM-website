@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                 <script src="./js/particles.min.js"></script>
+
+
+<meta charset="UTF-8">
+<title>CatHacks II</title>
+<meta name="description" content="CatHacks II is the University of Kentucky's second national hackathon, open to all college students in Computer Science.">
+<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./img/favicons.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons.ico/favicon-16x16.png">
+<link rel="manifest" href="./img/favicons.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./img/favicons.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body data-spy="scroll" data-target="#navid" data-offset="100">
+	<div id="home" >
+  <div id="HOME-breakpoint"> </div>
+ 	<div id="mydiv" class="" style="z-index:110;">
+	<object id="cathacks2logo" data="./img/comingsoon.svg" type="image/svg+xml" class="fadeInDown animated"></object>
+	<!--<div id="textbox"> 
+		<h1>C A T H A C K S II</h1>
+		<h2> FALL 2015</h2>
+	</div>-->
+	</div>
+    
+	
+ </div>
+  
+
+</body>
+<script src="./js/animatedModal.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script>
+    $("#applybutton").animatedModal({
+        animatedIn:'slideInUp',
+        animatedOut:'slideOutDown',
+        color:'#fff',
+        
+    });</script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/cbpFWTabs.js"></script>
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+<script>
+
+
+particlesJS("home", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#c6c6c6"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 9,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#c6c6c6", //c6c6c6 //e1e0e0
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+
+</script>
+
+</body>
+</html>
+
+
+	
+
+	
+
