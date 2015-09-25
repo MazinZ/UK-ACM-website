@@ -15,6 +15,7 @@ function calculateHomeSize() {
         $('#home').css('height', window.innerHeight);
     } else {
         $('#home').css('height', window.innerHeight - $('#nav-wrapper').height());
+		//$('.particles-js-canvas-el').css('width', )
     }
 	
 }
@@ -30,6 +31,7 @@ function affix() {
 $(window).resize(function() {
     var viewportWidth = $(window).width();
 	calculateHomeSize();
+	
 
 		//$('#nav-wrapper').height($("#navid").height());
 //$("#nav-wrapper").css({"min-height":$("#navid").height()+"px"});
