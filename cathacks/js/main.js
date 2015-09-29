@@ -58,7 +58,6 @@ $("#navid li").click(function(e) {
 			$('html, body').animate({
 				scrollTop: $(idName).offset().top - .35*$(window).height()
 			}, 1000);
-		
 		}
 });
 
