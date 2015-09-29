@@ -44,15 +44,21 @@ $("#navid li").click(function(e) {
 		var idName = "#" + $(this).attr('id').toLowerCase();
 		if (idName == "#home" || idName == "#sponsors" || idName=="#apply"){
 			$('html, body').animate({
-				scrollTop: $(idName).offset().top -100
+				scrollTop: $(idName).offset().top -99
+			}, 1000);
+		}
+		else if (idName == "#faq"){
+			idName+="id";
+			$('html, body').animate({
+				scrollTop: $(idName).offset().top - .24*$(window).height()
 			}, 1000);
 		}
 		else {
 			idName+="id";
 			$('html, body').animate({
-				scrollTop: $(idName).offset().top - .24*$(window).height()
+				scrollTop: $(idName).offset().top - .35*$(window).height()
 			}, 1000);
-			
+		
 		}
 });
 
