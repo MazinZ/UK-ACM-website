@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                 <script src="./js/particles.min.js"></script>
 
 
 <meta charset="UTF-8">
@@ -83,12 +82,18 @@
  
 <div id="about" class="container">
 
-<div id = "contentDiv" >
-	<h1 id="aboutid" class="h1Header"> ABOUT </h1>
-    <p>We're back for round two. Get ready to meet in <strong>Lexington, Kentucky</strong> this <strong>November 6th-8th</strong> for a weekend of discovery, creation, and fun. This time, you'll have <strong>36 hours</strong> to make your dreams reality. Free food, great swag, and lasting friendships are only some of the things you'll find at CatHacks.</p> 
-       <!--  <img style="width:500px; height:300px;" class = "kentucky" src="./img/kentucky.svg" />-->
-        <object width="500" height="300" class="kypicture" data="./img/kentucky.svg" type="image/svg+xml"></object>
-</div>
+
+<div class="row" id="contentDiv" style="margin-left:auto; margin-right:auto; margin-top:30%;" >
+       	 <div class="col-md-6" id="leftColumn">	<h1 id="aboutid" class="h1Header" style=" margin-left:auto; margin-right:auto;"> ABOUT </h1>
+
+        	<p>We're back for round two. Get ready to meet in <strong>Lexington, Kentucky</strong> on <strong>January 29th-31st</strong> for a weekend of discovery, creation, and fun. This time, you'll have <strong>36 hours</strong> to make your dreams reality. Free food, great swag, and lasting friendships are only some of the things you'll find at CatHacks II.</p>  <br></div>
+         <div class="col-md-4">
+         	        
+        <object width="450" height="250" class="kypicture" data="./img/catlogo.svg" type="image/svg+xml"></object>
+         </div>
+        </div>
+        
+        
    </div> 
     <div id="faq" class="container">
     <div class="block" style="min-height: 800px;">
@@ -99,8 +104,6 @@
 			<div id="tabs" class="tabs">
 				<nav>
 					<ul>
-                        <!--<li><a href="#section-1" class="icon-shop"><span>Shop</span></a></li>-->
-
 						<li><a href="#section-1" class="icon-file-text2"></a></li>
 						<li><a href="#section-2" class="icon-airplane"></a></li>
 						<li><a href="#section-3" class="icon-calendar"></a></li>
@@ -245,6 +248,8 @@
 
 
 <script src="./js/animatedModal.min.js"></script>
+                 <script src="./js/particles.min.js"></script>
+
 <script src="./js/main.js"></script>
 
 <script>
@@ -259,123 +264,11 @@
 		<script>
 			new CBPFWTabs( document.getElementById( 'tabs' ) );
 		</script>
+
 <script>
-
-
-particlesJS("home", {
-  "particles": {
-    "number": {
-      "value": 60,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#c6c6c6"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 9,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#c6c6c6", //c6c6c6 //e1e0e0
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 1,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-
-
+$(window).resize();
+console.log("hello");
 </script>
-
 </body>
 </html>
 
