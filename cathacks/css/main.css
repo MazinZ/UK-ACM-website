@@ -139,11 +139,19 @@ p {
     text-align: left;	
 	line-height:1.6;
 	color:#6e6e6e;
-	font-size:19px;
+	font-size:18px;
+}
+/*.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
 }
 
-
-
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}*/
 polygon{
 
     pointer-events:all;
@@ -190,9 +198,8 @@ object:hover circle{
 	width:100%;
 	border: solid #dcdcdc;
 	border-width: 0 0 1px 0;
-	padding-bottom:45px;
-	text-align:center;
-	margin-bottom:
+	padding-bottom:32px;
+	
 }
 
 .block {
@@ -219,8 +226,8 @@ object:hover circle{
 	background-color:#fff;
 	width:100%;
 	position:relative;
-	 min-height: 150%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 150vh; /* These two lines are counted as one :-)       */
+	 min-height: 200%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 200vh; /* These two lines are counted as one :-)       */
 
 }
 
@@ -384,7 +391,7 @@ object:hover circle{
 
 #contentDiv{
   height:570px;
-  width: 1000px;
+  width: 570px;
   position: absolute;
   top: 0;
   right: 0;
@@ -392,12 +399,7 @@ object:hover circle{
   left: 0;
   margin: auto;
   text-align:center;
-
-
-}
-
-#leftColumn {
-	width:620px;	
+	
 }
 
 #applyDiv{
@@ -413,15 +415,6 @@ object:hover circle{
 	
 	
 }
-@media (max-width: 1000px) {
-	#leftColumn{
-		margin-left:auto;
-		margin-right:auto;	
-	}
-	#contentDiv {
-		width:100%;	
-	}
-}
 
 @media (max-width: 768px) {
 	.kypicture{
@@ -432,7 +425,7 @@ object:hover circle{
 		width:400px;
 	}
 	#contentDiv {
-		width:450px;
+		width:400px;
 	}
 	#applyDiv {
 		width:400px;
@@ -444,11 +437,9 @@ object:hover circle{
 	#applyDiv{
 		height:275px;	
 	}
-	#leftColumn{
-		width:450px;	
-	}
+	
 }
-@media (max-width: 455px) {
+@media (max-width: 430px) {
 	.centered {
 		width:300px;
 	}
@@ -462,18 +453,14 @@ object:hover circle{
 		width:300px;	
 
 	}
-	#leftColumn{
-		width:300px;	
-	}
 }
-
 
 @media (max-width: 330px) {
 	.centered {
 		width:200px;
 	}
 	.kypicture{
-		width:150px;	
+		width:200px;	
 
 	}
 	.centered h1{
@@ -496,9 +483,6 @@ object:hover circle{
 	p{ 
 		text-align:center;
 		font-size:14px;
-	}
-	#leftColumn{
-		width:200px;	
 	}
 }
 
@@ -536,9 +520,6 @@ object:hover circle{
 	.mediabox h3{
 		font-size:18px;
 		
-	}
-	#leftColumn{
-		width:100%;	
 	}
 }
 /* Apply button */
