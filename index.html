@@ -1,284 +1,209 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
-
-  <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                 <script src="./js/particles.min.js"></script>
-
-
 <meta charset="UTF-8">
-<title>CatHacks II</title>
-<meta name="description" content="CatHacks II is the University of Kentucky's second national hackathon, open to all college students in Computer Science.">
-<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons.ico/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons.ico/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons.ico/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons.ico/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons.ico/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons.ico/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons.ico/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons.ico/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons.ico/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons.ico/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons.ico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./img/favicons.ico/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons.ico/favicon-16x16.png">
-<link rel="manifest" href="./img/favicons.ico/manifest.json">
+<title>UK ACM</title>
+<link rel="stylesheet" href="./css/animate.css">
+<link rel="stylesheet" href="./css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+<link rel="manifest" href="./img/favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./img/favicons.ico/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="./img/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+
 </head>
 
-<body data-spy="scroll" data-target="#navid" data-offset="100">
-	<div id="home" >
-  <div id="HOME-breakpoint"> </div>
- 	<div id="mydiv" class="" style="z-index:110;">
-	<object id="cathacks2logo" data="./img/logo.svg" type="image/svg+xml" class="fadeInDown animated"></object>
-	<!--<div id="textbox"> 
-		<h1>C A T H A C K S II</h1>
-		<h2> FALL 2015</h2>
-	</div>-->
-	</div>
+<body>
+<div id="mainWrapper" >
+<div id="main">
+	<div id="overlay">
     
-	
- </div>
-  <div id="navbarAffix"> </div>
- <div id="nav-wrapper" style="height:100px;">
- <nav style="height:100px; z-index:110;" role="navigation" id="navid" class="navbar navbar-default navreplace" >
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <a href="#"  class="navbar-brand" >C A T H A C K S II </a>
-
-        </div>
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-
-            <ul class="nav navbar-nav"  >
-               <!-- <li class="active"><a href="#">Home</a></li>-->
-                <li id="HOME" ><a href="#home">HOME</a></li>
-                <li id="ABOUT"><a href="#about">ABOUT</a></li>
-                <li id="FAQ"><a href="#faq">FAQ</a></li>
-                <li id="APPLY"><a href="#apply">APPLY</a></li>
-                <li id="SPONSORS" ><a href="#sponsors">SPONSORS</a></li>
-
-            </ul>
-          
-        </div>
-    </nav>
- </div>
- 
-<div id="about" class="container">
-
-<div id = "contentDiv" >
-	<h1 id="aboutid" class="h1Header"> ABOUT </h1>
-    <p>We're back for round two. Get ready to meet in <strong>Lexington, Kentucky</strong> on <strong>January 29th-31st</strong> for a weekend of discovery, creation, and fun. This time, you'll have <strong>36 hours</strong> to make your dreams reality. Free food, great swag, and lasting friendships are only some of the things you'll find at CatHacks II.</p> 
-       <!--  <img style="width:500px; height:300px;" class = "kentucky" src="./img/kentucky.svg" />-->
-        <object width="500" height="300" class="kypicture" data="./img/kentucky.svg" type="image/svg+xml"></object>
-</div>
-   </div> 
-    <div id="faq" class="container">
-    <div class="block" style="min-height: 800px;">
-
-<div class = "centered" style="width:100%; margin-top:110px;" >
-	<h1 id="faqid" class="h1Header"> FAQ </h1>
-    	<div class="row">
-			<div id="tabs" class="tabs">
-				<nav>
-					<ul>
-                        <!--<li><a href="#section-1" class="icon-shop"><span>Shop</span></a></li>-->
-
-						<li><a href="#section-1" class="icon-file-text2"></a></li>
-						<li><a href="#section-2" class="icon-airplane"></a></li>
-						<li><a href="#section-3" class="icon-calendar"></a></li>
-						<li><a href="#section-4" class="icon-envelop"></a></li>
-					</ul>
-				</nav>
-				<div class="content">
-
-					<section id="section-1">
-                    
-						<div class="mediabox">
-							<h3>CatHacks? What's that? </h3>
-							<p>In April 2015, CatHacks was the first national Hackathon to be held in the state of Kentucky. This time, we're making it even bigger. In January, tons of hackers will travel from colleges across the nation to Lexington, KY in order to flesh out ideas in the field of technology.
-</p>
-						</div>
-						<div class="mediabox">
-							<h3>Who can attend?</h3>
-							<p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis.</p>
-						</div>
-						<div class="mediabox">
-							<h3>What if I'm not that great at programming yet?</h3>
-							<p>All we require is a desire to learn and a drive to create. Sign up anyway! Spots are limited, but we'll see what we can do.
-</p>
-						</div>
-					</section>
-					<section id="section-2">
-						<div class="mediabox">
-							<h3>How much does it cost?</h3>
-							<p>CatHacks is completely free to all accepted members. This includes meals for the weekend and any swag sponsors may bring. </p>
-						</div>
-						<div class="mediabox">
-							<h3>How do I get there?</h3>
-							<p>If you're coming from a college nearby, you might want to look into carpooling with others! Parking will be available in two different areas on campus. More information will be sent out at a later date.</p>
-						</div>
-						<div class="mediabox">
-							<h3>Will there be travel reimbursement?</h3>
-							<p>At this time, we cannot promise travel reimbursement. If you require travel reimbursement to attend CatHacks, please mention this on your application. If anything changes, we will reach out to you personally.</p>
-						</div>
-					</section>
-					<section id="section-3">
-						<div class="mediabox">
-							<h3>When is CatHacks II?</h3>
-							<p>It will take place on the weekend of January 29-31, 2016. Check-in will begin at 6PM. A full schedule will be posted</p>
-						</div>
-						<div class="mediabox">
-							<h3>Where is CatHacks II?</h3>
-							<p>It will take place at the University of Kentucky. Specifically, the majority of the event, including check-in, will occur at the Ralph G. Anderson Building.</p>
-						</div>
-						<div class="mediabox">
-							<h3>What should I bring?</h3>
-							<p>You'll probably need some kind of a computer. Make sure you bring chargers for any devices you're bringing. In addition, bringing a sleeping bag and pillow will allow you to get some sleep if you can't stay up for 36 consecutive hours. Finally, make sure you bring any toiletries you'll want for the weekend, including a toothbrush, toothpaste, deodorant, and a towel.</p>
-						</div>
-					</section>
-					<section id="section-4">
-	
-						<div class="mediabox horizontalcenter" style="float:none; text-align:center;">
-							<h3>More questions?</h3>
-							<p>Email us at inquires@cathacks.com</p>
-						</div>
-	
-					</section>
-			
-				</div><!-- /content -->
-			</div><!-- /tabs -->
-		</div>
-</div>
+	<div id="uklogo">
+      <a href="http://www.uky.edu" target="_blank"></a>
+     <img src="./uklogo.svg" >
 	</div>
-	</div>
+
+    <div id="header">
+     <img src="./uklogo2.svg" >
+    </div>
+<ul id="mainMenu">
+	<li> <a href="./index.html">HOME</a></li>
+    <li><a href="http://acm.cs.uky.edu/cathacks">CATHACKS</a></li>
+	<li><a href="#">TEAM</a></li>
+</ul>
+
+<div class="container" id="container" >
+<div id="firstDiv">
+<!--<h1><a href="#" id="involveHeader" onClick="sweep()">GET INVOLVED ></a> </h1>-->
+
+<div class = "content">
+
+<p id="firstP">
+ACM at UK is an experience. We strive to foster a strong community for computing students at the University of Kentucky. We're most famous for our annual hackathon, CatHacks, but we also put on several other events throughout the year.
+</p>
+<p> UK ACM meetings occur each Thursday from 6:00PM-7:00PM and are open to all UK students. You can find us in the <strong><a href="https://www.google.com/maps/place/Davis+Marksbury+Bldg,+Rose+St,+Lexington,+KY+40506/@38.0391623,-84.4983552,17z/data=!3m1!4b1!4m2!3m1!1s0x884244c1ca16aae3:0x8cc1debc5f706a51" target="_blank">Marksbury Building</a></strong>.</p>
+
+
+<div class="visible">
+<ul id="headerCycle">
+      <li> <h1><a href="javascript:void(0);" id="involveHeader" onClick="sweepUp()">JOIN OUR MAILING LIST ></h1> </a></li>
+      <li> <h1><a href="javascript:void(0);" id="involveHeader" onClick="sweepDown()">BACK ></h1> </a> </li>
+     </ul>
+</div>
+<h2 id="mobileMailingHeader" style="text-align:center; color:#fff; text-decoration:none;"> <a href="#"> JOIN OUR MAILING LIST </h2></a>
+
+</div>
+<br><br>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="./css/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#mc_embed_signup div.mce_inline_error {
+    margin: -2.5rem 0 1em 0;
+    padding: 5px 10px;
+    background-color: #6B0505;
+    font-weight: bold;
+    z-index: 1;
+    color: #fff;
+}
+	#mc_embed_signup{clear:left; font-family:"Oak"; color:#fff; height: 380px}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//cathacks.us10.list-manage.com/subscribe/post?u=d2090fb8da3cd4292151bb495&amp;id=b33bf0f457" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address </label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d2090fb8da3cd4292151bb495_b33bf0f457" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="SUBSCRIBE" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+</div>
+
+</div>
+
+
+
+
+</div> <!-- end overlay -->
+
+</div>
+
+	
+
+<!-- end main wrapper -->
+</div>
+<div id="mobilepage">
     
-       <div id="apply" class="container">
-    <div id="applyDiv">
-
-	<h1 id="applyid" class="h1Header"> APPLY </h1>
-    <div class="horizontalcenter">
-    <div id="applybutton" class="hvr-shutter-out-vertical appSectionButton" href="#animatedModal" style="margin-right:10px;">
-	A P P L Y
-	</div>
-     <div id="applybuttonMobile" class="hvr-shutter-out-vertical appSectionButton">
-	A P P L Y
-    <a href="https://cathacks.typeform.com/to/wzYGNp"></a>
-	</div>
-	<div class="hvr-shutter-out-vertical appSectionButton" style="margin-left:10px;">
-	S P O N S O R
-	</div>
-</div>
-	</div>
-	</div>
+    </div>
+<div id="team">
+ <div id = "teamContainer" style="margin-top:120px;">
+ <h2 style="width:158px;"> OFFICERS </h2>
  
- <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-        	<img src="img/closebt.svg" class="horizontalcenter closebtn" />
-        </div>
-            
-        <div class="modal-content" >
-      	<iframe id="typeform-widget" width="100%" height="97%" frameborder="0" src="https://cathacks.typeform.com/to/wzYGNp" style="margin-top:40px;"></iframe>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-        </div>
+    <div class = "row" > 
+	<div class = "teamBox" > 
+		<h4> PRESIDENT </h4>
+    	<h5> ETHAN GILL</h5>
     </div>
     
-<div id="sponsors" class="container" style="min-height:100%;"> <!--SPONSORS-->
-    <div class="block" style="height: 800px;">
-
-      
-      	<div class = "centered" >
-        
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-       
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <!--<a class="thumbnail" href="#">-->
-                    <img class="img-responsive" src="http://placehold.it/200x150" alt="">
-            </div>
-        </div>
-	</div>
-	</div>
-	</div> <!--SPONSORS END-->
+    <div class = "teamBox">
+   		<h4> VICE-PRESIDENT </h4>
+    	<h5>DEAN CROCKETT</h5>
+    </div>
     
+    <div class = "teamBox">
+    	<h4>TREASURER </h4>
+    	<h5>IRSYAD HANIF</h5>
+	</div>
+    </div>
+    
+   	<div class = "row" > 
+    <div class = "teamBox" > 
+		<h4> SECRETARY </h4>
+    	<h5> BRITTANY HONAKER </h5>
+    </div>
+    
+    <div class = "teamBox">
+   		<h4> STUDENT REPRESENTATIVE </h4>
+    	<h5>JONAH STARLING</h5>
+    </div>
+    
+    <div class = "teamBox">
+    	<h4>FACULTY ADVISOR </h4>
+    	<h5>DR. JUREK JAROMCZYK </h5>
+	</div>
+    <h6 style="width:10px; margin-left:auto; margin-right:auto;"> ... </h6>
+	<h5 id="mazin" style=" margin-left:auto; margin-right:auto; text-align:center;"> WEB DEVELOPMENT BY MAZIN ZAKARIA</h5>
+ 	</div>
+    
+ </div>
 
+</div>
+ <footer>
+	Questions? Email us at uky.acm@gmail.com<br>
+    © University of Kentucky ACM 2015
+</footer>
+<script> 
 
-<script src="./js/animatedModal.min.js"></script>
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="./js/jquery.backstretch.min.js"></script>
+
+<script src="./js/particles.min.js"></script>
 <script src="./js/main.js"></script>
 
-<script>
-    $("#applybutton").animatedModal({
-        animatedIn:'slideInUp',
-        animatedOut:'slideOutDown',
-        color:'#fff',
-        
-    });</script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/cbpFWTabs.js"></script>
-		<script>
-			new CBPFWTabs( document.getElementById( 'tabs' ) );
-		</script>
-<script>
 
 
-particlesJS("home", {
+<script>
+particlesJS("main", {
   "particles": {
     "number": {
-      "value": 60,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#c6c6c6"
+      "value": "#272b2f"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#272b2f"
       },
       "polygon": {
         "nb_sides": 5
@@ -290,7 +215,7 @@ particlesJS("home", {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 1,
       "random": false,
       "anim": {
         "enable": false,
@@ -300,7 +225,7 @@ particlesJS("home", {
       }
     },
     "size": {
-      "value": 9,
+      "value": 7,
       "random": true,
       "anim": {
         "enable": false,
@@ -313,12 +238,12 @@ particlesJS("home", {
       "enable": true,
       "distance": 150,
       "color": "#c6c6c6", //c6c6c6 //e1e0e0
-      "opacity": 0.4,
+      "opacity": 0.2,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": .3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -348,14 +273,14 @@ particlesJS("home", {
       "grab": {
         "distance": 140,
         "line_linked": {
-          "opacity": 1
+          "opacity": .4
         }
       },
       "bubble": {
         "distance": 400,
         "size": 40,
         "duration": 2,
-        "opacity": 8,
+        "opacity": .4,
         "speed": 3
       },
       "repulse": {
@@ -373,14 +298,8 @@ particlesJS("home", {
   "retina_detect": true
 });
 
-
 </script>
+
 
 </body>
 </html>
-
-
-	
-
-	
-
