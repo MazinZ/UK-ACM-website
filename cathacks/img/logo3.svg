@@ -7,7 +7,7 @@
 <g id="Layer_1">
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="255.4773" y1="357" x2="255.4773" y2="127.3883">
 		<stop  offset="0" style="stop-color:#C9D0D3"/>
-		<stop  offset="1" style="stop-color:#C8C9C9"/>
+		<stop  offset="1" style="stop-color:#B8B8B8"/>
 	</linearGradient>
 	<path fill="url(#SVGID_1_)" d="M372.4,342.1L329.1,330l5.9-8.9l38.7,15.2L372.4,342.1z M327.3,265l37.3-22.9l24.9,6.2l71.2-6.5
 		l-0.7-7.9l-69.8,6.4l-26.8-6.7l-41.9,25.7l-38.7,65.9l6.9,4L327.3,265z M220.5,254.5L230,270l56.3-11.2l-19,46.5l7.4,3l24.6-60.2
