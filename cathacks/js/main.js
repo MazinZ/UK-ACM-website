@@ -100,7 +100,7 @@ particlesJS("home", {
       }
     },
     "size": {
-      "value": 9,
+      "value": 8,
       "random": true,
       "anim": {
         "enable": false,

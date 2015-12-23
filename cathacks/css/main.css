@@ -10,6 +10,7 @@
 	}
 	strong{
 	letter-spacing:1px;
+	
 	}
 
 }
@@ -79,7 +80,9 @@ strong {
 
 font-family: "AleoBold"; 
 text-decoration: underline;
+color:#7f939c;
 }
+
 
 html, body{
         margin: 0px;
