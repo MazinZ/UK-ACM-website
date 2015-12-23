@@ -159,8 +159,8 @@ particlesJS("home", {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 100,
+        "duration": 0.1
       },
       "push": {
         "particles_nb": 4
