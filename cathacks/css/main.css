@@ -78,7 +78,7 @@
 
 strong { 
 
-font-family: "AleoBold"; 
+font-family: "Montserrat"; 
 text-decoration: underline;
 color:#7f939c;
 }
@@ -616,7 +616,7 @@ object:hover circle{
 }
 
 .navbar-brand{
-	font-size:38px;
+	font-size:30px;
 	-webkit-font-smoothing: antialiased !important;
 	font-family: "Montserrat", sans-serif;
 	color:#264d5d !important;
@@ -625,6 +625,7 @@ object:hover circle{
 	height:100px;
 	padding-top:0px;
 	font-weight:700;
+	letter-spacing:5px;
 	
 }
 .navbar-fixed {
@@ -808,7 +809,7 @@ display:none;
 /* scroll navbar animation */
 .navbar-nav > .active > a{
 	background-color:#fff;
-	opacity:.6;
+	opacity:.7;
  	color:#264d5d !important;  
 	
 }
@@ -865,10 +866,10 @@ display:none;
 
 
 ::selection {
-  background: #b9b9b9; /* WebKit/Blink Browsers */
+  background: #99b2bd; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #b9b9b9; /* Gecko Browsers */
+  background: #99b2bd; /* Gecko Browsers */
 }
 
 
