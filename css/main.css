@@ -422,16 +422,16 @@ textarea{
   position:relative;
 }
 #team .button {
-  width:200px;
-  height:70px;  
+  width:150px;
+  height:50px;  
   line-height:68px;
 }
 
-.container .button {
+/*.container .button {
   width:150px;
   height:50px;  
   line-height:50px;
-}
+}*/
 
 
 .button:hover{

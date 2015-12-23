@@ -65,7 +65,7 @@ $("#navid li").click(function(e) {
 particlesJS("home", {
   "particles": {
     "number": {
-      "value": 60,
+      "value": 60, //60
       "density": {
         "enable": true,
         "value_area": 800
@@ -90,7 +90,7 @@ particlesJS("home", {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.3,
       "random": false,
       "anim": {
         "enable": false,
@@ -136,7 +136,7 @@ particlesJS("home", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
