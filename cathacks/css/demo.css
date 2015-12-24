@@ -48,6 +48,11 @@ a:hover {
 	color: #000;
 }
 
+/*.mediabox {
+	border: solid #ededed;
+	border-width: 1px 0 0px 0;
+}*/
+
 .container > header {
 	width: 90%;
 	max-width: 69em;
