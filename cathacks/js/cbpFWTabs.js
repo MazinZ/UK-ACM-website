@@ -63,7 +63,7 @@
 		// change current
 		this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
 		this.tabs[ this.current ].className = 'tab-current';
-		this.items[ this.current ].className = 'content-current animated zoomIn';
+		this.items[ this.current ].className = 'content-current animated fadeInDown';
 	};
 
 	// add to global namespace
