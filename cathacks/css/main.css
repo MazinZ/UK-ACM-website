@@ -4,7 +4,7 @@
 /*
 	CatHacks II theme by Mazin Zakaria
 */
-@-moz-document url-prefix() {
+/*@-moz-document url-prefix() {
 	h1 {
 	font-family: "BebasNeueRegular", sans-serif !important;
 	}
@@ -75,6 +75,7 @@
    font-weight: normal;
    font-style: normal;
 }
+*/
 
 strong {
 
@@ -91,7 +92,26 @@ html, body{
 
 }
 
+#cathacks2logo{
+	width:600px;
+	height:600px;
 
+}
+
+#mydiv {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	width:600px;
+	height:600px; /*461*/
+	margin-top: -300px; /*set to a negative number 1/2 of your height*/
+	margin-left: -300px; /*set to a negative number 1/2 of your width*/
+	/*border: 1px solid #ccc;*/
+  	/*background-image:url(img/logo.svg);
+	background-repeat:no-repeat;*/
+
+
+}
 
 #home {
 	height:100%;
@@ -499,6 +519,21 @@ object:hover circle{
 	#leftColumn{
 		width:450px;
 	}
+	#mydiv {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    /* border: 1px solid #ccc; */	
+	}
+	#cathacks2logo{
+		width:400px;
+		height:400px;
+		overflow-x:hidden;
+	}
 }
 @media (max-width: 455px) {
 	.centered {
@@ -630,7 +665,7 @@ object:hover circle{
 	height:100px;
 	padding-top:0px;
 	font-weight:700;
-	letter-spacing:5px;
+	letter-spacing:3px;
 
 }
 .navbar-fixed {
@@ -664,20 +699,7 @@ object:hover circle{
 	margin-bottom:0px;
 }
 
-#mydiv {
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	width:600px;
-	height:600px; /*461*/
-	margin-top: -300px; /*set to a negative number 1/2 of your height*/
-	margin-left: -300px; /*set to a negative number 1/2 of your width*/
-	/*border: 1px solid #ccc;*/
-  	/*background-image:url(img/logo.svg);
-	background-repeat:no-repeat;*/
 
-
-}
 #textbox {
 	width:311px;
 	height:150px;
@@ -695,7 +717,7 @@ object:hover circle{
 .navbar li a {
   position: relative;
   text-decoration: none;
-  color:#ededed !important;
+  color:#a8a8a8 !important;
   opacity:1;
   transition: all 0.5s;
 
@@ -814,8 +836,8 @@ display:none;
 /* scroll navbar animation */
 .navbar-nav > .active > a{
 	background-color:#fff;
-	opacity:.7;
- 	color:#264d5d !important;
+	opacity:.8;
+ 	color:#24576c !important;
 
 }
 
@@ -854,11 +876,7 @@ display:none;
 }
 /*                            */
 
-#cathacks2logo{
-	width:600px;
-	height:600px;
 
-}
 @media screen and (max-width: 325px){
 	#cathacks2logo{
 		width:262px;
