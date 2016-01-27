@@ -116,7 +116,7 @@ html, body{
 #home {
 	height:100%;
 	margin:0;
-	background-color:#ededed; /*efefef*/
+	background-color:#e0e0e0; /*efefef*/
 	width:100%;
 	position:relative;
 
@@ -272,7 +272,7 @@ object:hover circle{
 
 #about {
 	margin:0;
-	background-color:#ededed;
+	background-color:#e0e0e0;
 	width:100%;
 	position:relative;
 	 min-height: 150%;  /* Fallback for browsers do NOT support vh unit */
