@@ -10,7 +10,7 @@
 	}
 	strong{
 	letter-spacing:1px;
-	
+
 	}
 
 }
@@ -76,9 +76,9 @@
    font-style: normal;
 }
 
-strong { 
+strong {
 
-font-family: "Montserrat"; 
+font-family: "Montserrat";
 text-decoration: underline;
 color:#7f939c;
 }
@@ -88,22 +88,22 @@ html, body{
         margin: 0px;
 	     height: 100%;
 
-	
+
 }
 
 
 
 #home {
-	height:100%;	
+	height:100%;
 	margin:0;
 	background-color:#ededed; /*efefef*/
 	width:100%;
 	position:relative;
-	
-	 -moz-user-select: none; 
-        -khtml-user-select: none; 
-        -webkit-user-select: none; 
-        -o-user-select: none; 
+
+	 -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
 }
 
 /*h1 {
@@ -124,7 +124,7 @@ h1 {
 	font-weight:600;
 	margin-bottom:25px;
 	letter-spacing:6px;
-	
+
 }
 
 #mydiv h1 {
@@ -134,14 +134,14 @@ h1 {
 	line-height: .3 !important;
 	color:#508dad !important;
 	font-weight:600;
-	
+
 }
 
 
-p {  
+p {
 	font-family: "Montserrat", Georgia, Serif;
   	font-weight: 400;
-    text-align: left;	
+    text-align: left;
 	line-height:1.6;
 	color:#6e6e6e;
 	font-size:21px;
@@ -160,7 +160,7 @@ p {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes Textgradient { 
+@keyframes Textgradient {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -185,20 +185,20 @@ polygon{
     pointer-events:all;
 }
 polygon:hover{
-	    opacity: 0.0;	
+	    opacity: 0.0;
 
-    
+
 }
 circle:hover{
-	   fill-opacity: 0.0;	
+	   fill-opacity: 0.0;
 
-    
+
 }
 g:hover{
-opacity:0.0;	
+opacity:0.0;
 }
 object:hover circle{
-	    fill-opacity: 0.0;	
+	    fill-opacity: 0.0;
 }
 .kentucky polygon:hover {
     fill: #fce57e;
@@ -218,7 +218,7 @@ object:hover circle{
        margin: auto;
 	   text-align:center;
   }*/
- 
+
 #mainTextbox {
 	width:600px;
 }
@@ -234,7 +234,7 @@ object:hover circle{
 .block {
   text-align: center;
 }
- 
+
 .block:before {
   content: '';
   display: inline-block;
@@ -243,7 +243,7 @@ object:hover circle{
   margin-right: -0.25em; /* Adjusts for spacing */
 }
 
-/* The element to be centered, can also be of any width and height */ 
+/* The element to be centered, can also be of any width and height */
 .centered {
   display: inline-block;
   vertical-align: middle;
@@ -261,7 +261,7 @@ object:hover circle{
 }
 
 #apply {
-	height:100%;	
+	height:100%;
 	margin:0;
 	background-color:#efefef;
 	width:100%;
@@ -270,7 +270,7 @@ object:hover circle{
 }
 
 #faq {
-	min-height:120%;	
+	min-height:120%;
 	margin:0;
 	background-color:#fff;
 	width:100%;
@@ -279,7 +279,7 @@ object:hover circle{
 }
 
 #sponsors {
-	min-height:100%;	
+	min-height:100%;
 	margin:0;
 	background-color:#fff;
 	width:100%;
@@ -307,7 +307,7 @@ object:hover circle{
     border: solid #7f939c;
 	border-width: 2px 0;
 	color:#7f939c;
-  
+
 }
 .hvr-shutter-out-vertical:before {
   content: "";
@@ -361,18 +361,18 @@ object:hover circle{
 
 .horizontalcenter{
 	margin-left:auto;
-	margin-right:auto;	
-	
+	margin-right:auto;
+
 }
 .horizontalcenter p{
-	text-align:center !important;	
+	text-align:center !important;
 }
 
 
 
 .closebtn {
 	width:60px;
-	height:60px;	
+	height:60px;
 	display:block;
 	-webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -381,7 +381,7 @@ object:hover circle{
     transition: all 0.2s;
     cursor: pointer;
 	margin-top:2px;
-	
+
 }
 .closebtn:hover {
 	transform:rotate(90deg);
@@ -404,7 +404,7 @@ object:hover circle{
 			top:0;
 			border:0;
 		}
-    
+
 /*                        */
 
 #animatedModal{
@@ -428,6 +428,9 @@ object:hover circle{
     float: none;
     margin: 0 auto;
 }
+.col-vc {
+   vertical-align: middle;
+}
 
 #contentDiv{
   height:570px;
@@ -444,7 +447,7 @@ object:hover circle{
 }
 
 #leftColumn {
-	width:620px;	
+	width:620px;
 }
 
 #applyDiv{
@@ -457,16 +460,16 @@ object:hover circle{
   left: 0;
   margin: auto;
   text-align:center;
-	
-	
+
+
 }
 @media (max-width: 1000px) {
 	#leftColumn{
 		margin-left:auto;
-		margin-right:auto;	
+		margin-right:auto;
 	}
 	#contentDiv {
-		width:100%;	
+		width:100%;
 	}
 }
 
@@ -474,7 +477,7 @@ object:hover circle{
 
 @media (max-width: 768px) {
 	.kypicture{
-		width:400px;	
+		width:400px;
 		height:200px;
 	}
 	.centered {
@@ -488,13 +491,13 @@ object:hover circle{
 	}
 	.appSectionButton{
 		margin:0 !important;
-		margin-bottom:20px !important;	
+		margin-bottom:20px !important;
 	}
 	#applyDiv{
-		height:275px;	
+		height:275px;
 	}
 	#leftColumn{
-		width:450px;	
+		width:450px;
 	}
 }
 @media (max-width: 455px) {
@@ -508,11 +511,11 @@ object:hover circle{
 		width:300px;
 	}
 	.kypicture{
-		width:300px;	
+		width:300px;
 
 	}
 	#leftColumn{
-		width:300px;	
+		width:300px;
 	}
 }
 
@@ -522,12 +525,12 @@ object:hover circle{
 		width:200px;
 	}
 	.kypicture{
-		width:150px;	
+		width:150px;
 
 	}
 	.centered h1{
 		font-size:50px;
-			
+
 	}
 	#contentDiv {
 		width:200px;
@@ -540,14 +543,14 @@ object:hover circle{
 	}
 	#contentDiv h1{
 		font-size:50px;
-			
+
 	}
-	p{ 
+	p{
 		text-align:center;
 		font-size:14px;
 	}
 	#leftColumn{
-		width:200px;	
+		width:200px;
 	}
 }
 
@@ -560,7 +563,7 @@ object:hover circle{
 		display:none;
 	}
 	.centered h1{
-		font-size:35px;	
+		font-size:35px;
 	}
 	#applyDiv {
 		width:100px;
@@ -578,16 +581,16 @@ object:hover circle{
 		letter-spacing:6px;
 
 	}
-	p{ 
+	p{
 		text-align:center;
 		font-size:14px;
 	}
 	.mediabox h3{
 		font-size:18px;
-		
+
 	}
 	#leftColumn{
-		width:100%;	
+		width:100%;
 	}
 }
 /* Apply button */
@@ -628,20 +631,20 @@ object:hover circle{
 	padding-top:0px;
 	font-weight:700;
 	letter-spacing:5px;
-	
+
 }
 .navbar-fixed {
     top: 0;
     z-index: 100;
   	position: fixed;
     width: 100%;
-	
-	
-	
+
+
+
 }
 
 .navbar-nav li a{
-	font-size:16px;	
+	font-size:16px;
 	/*color:#d4d4d4 !important;*/
 	font-family:"Montserrat", sans-serif;
 	font-weight:500;
@@ -655,7 +658,7 @@ object:hover circle{
 .navbar-nav > li{
   padding-left:30px;
   padding-right:30px;
-  
+
 }
 .navbar{
 	margin-bottom:0px;
@@ -672,12 +675,12 @@ object:hover circle{
 	/*border: 1px solid #ccc;*/
   	/*background-image:url(img/logo.svg);
 	background-repeat:no-repeat;*/
-	
+
 
 }
 #textbox {
 	width:311px;
-	height:150px;	
+	height:150px;
 	text-align:center;
 	margin-top:30px;
 	/*margin-top:350px;*/
@@ -695,7 +698,7 @@ object:hover circle{
   color:#ededed !important;
   opacity:1;
   transition: all 0.5s;
-  
+
 }
 
 
@@ -720,13 +723,13 @@ object:hover circle{
   /*visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);*/
- 
+
 
 }
 
 .navbar li a:hover{
 	opacity:.5;
- 	color:#264d5d !important;  
+ 	color:#264d5d !important;
 }
 
 
@@ -741,26 +744,26 @@ object:hover circle{
   float: none;
   vertical-align: top;
   background-color:#fff;
-  
+
 }
 
 .navbar .navbar-collapse {
   text-align: center;
 }
 .navbar-brand {
-display:none;	
+display:none;
 
 }
 
 @media screen and (max-width: 768px){
 	.navbar-brand{
-		display:block;	
-		
+		display:block;
+
 	}
-	
+
 }
 #applybuttonMobile{
-	display:none;	
+	display:none;
 }
 
 #applybuttonMobile a {
@@ -779,26 +782,26 @@ display:none;
 
 @media screen and (max-width: 600px){
 	#applybutton{
-		display:none;	
+		display:none;
 	}
 	#applybuttonMobile{
-		display:inline-block !important;	
+		display:inline-block !important;
 	}
 	iframe{
-		display:none;	
+		display:none;
 	}
 }
 
 @media screen and (max-width: 320px){
 	.navbar-brand{
-		display:none;	
-		
+		display:none;
+
 	}
 }
 
 .container{
-	padding:0 !important;	
-	
+	padding:0 !important;
+
 }
 
 
@@ -812,8 +815,8 @@ display:none;
 .navbar-nav > .active > a{
 	background-color:#fff;
 	opacity:.7;
- 	color:#264d5d !important;  
-	
+ 	color:#264d5d !important;
+
 }
 
 .active:after {
@@ -853,8 +856,8 @@ display:none;
 
 #cathacks2logo{
 	width:600px;
-	height:600px;	
-	
+	height:600px;
+
 }
 @media screen and (max-width: 325px){
 	#cathacks2logo{
@@ -862,8 +865,8 @@ display:none;
 		height:381px;
 		margin-left:24.5px;
 	}
-	
-	
+
+
 }
 
 
@@ -875,29 +878,38 @@ display:none;
 }
 
 
-@-webkit-keyframes fadeInDownLogo { 
-    0% { 
-        opacity: 0; 
-        -webkit-transform: translateY(-20px); 
-    } 
-    100% { 
-        opacity: 1; 
-        -webkit-transform: translateY(0); 
-    } 
-} 
+@-webkit-keyframes fadeInDownLogo {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
 
-@keyframes fadeInDownLogo { 
-    0% { 
-        opacity: 0; 
-        transform: translateY(-20px); 
-    } 
-    100% { 
-        opacity: 1; 
-        transform: translateY(0); 
-    } 
-} 
+@keyframes fadeInDownLogo {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-.fadeInDown { 
-    -webkit-animation-name: fadeInDownLogo; 
-    animation-name: fadeInDownLogo; 
+.fadeInDown {
+    -webkit-animation-name: fadeInDownLogo;
+    animation-name: fadeInDownLogo;
+}
+
+.spimg {
+	width:  200px;
+  height: auto;
+}
+
+.conduct {
+	text-align: center;
 }
