@@ -228,12 +228,16 @@ hr {
 .whiteBox h1{
 	font-family:"Montserrat";
 	letter-spacing:6px;
-	font-weight:100;
+	font-weight:300;
 	/*line-height:300px;*/
 	text-align:center;
 	font-size:18px;	
 	color:#272727;
-	
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 
 
 }
@@ -249,7 +253,7 @@ hr {
 
 .whiteBox p{
 	font-family:"Montserrat";
-	font-weight:100 !important;
+	font-weight:300 !important;
 	font-size:17px;	
 	color:#3f3f3f;
 	letter-spacing:1px;
@@ -665,6 +669,7 @@ object:hover circle{
 	#applyDesktop {
 		display:none;	
 	}
+	
 }
 
 
@@ -846,7 +851,7 @@ object:hover circle{
 	font-size:30px;
 	-webkit-font-smoothing: antialiased !important;
 	font-family: "Montserrat", sans-serif;
-	color:#264d5d !important;
+	color:#a1acb2 !important;
 	padding-left:15%;
 	line-height:100px;
 	height:100px;

@@ -9,8 +9,8 @@ $(document).ready(function(){
          $(this).find( "hr" ).css("width", "80px");
 		 $(this).find(".innerContainer").css("margin-top","-50px");
 		 //$(this).css("background-color","#8a8a8a");
-		 $(this).find( "hr" ).css("border-color", "#3f6888");
-		 $(this).find("h1").css("color","#3f6888");
+		 $(this).find( "hr" ).css("border-color", "#a1acb2");
+		 $(this).find("h1").css("color","#a1acb2");
 
 });
 
