@@ -5,6 +5,28 @@ $(document).ready(function(){
 	calculateHomeSize();
 	affix();
 
+     $(".whiteBox").mouseover(function(e){
+         $(this).find( "hr" ).css("width", "80px");
+		 $(this).find(".innerContainer").css("margin-top","-50px");
+		 //$(this).css("background-color","#8a8a8a");
+		 $(this).find( "hr" ).css("border-color", "#3f6888");
+		 $(this).find("h1").css("color","#3f6888");
+
+});
+
+$(".whiteBox").mouseleave(function(e){
+         $(this).find( "hr" ).css("width", "0px");
+		 $(this).find(".innerContainer").css("margin-top","150px");
+
+		 $(this).find( "hr" ).css("border-color", "#fff");
+		//$(this).css("background-color","#fff");
+		$(this).find("h1").css("color","#3f3f3f");
+		
+		
+
+});
+
+
 });
 
 $(document).scroll(function() {

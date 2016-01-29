@@ -82,6 +82,7 @@ strong {
 font-family: "Montserrat";
 text-decoration: underline;
 color:#7f939c;
+
 }
 
 
@@ -92,6 +93,72 @@ html, body{
 
 }
 
+#apply a{
+	color:#3e3e3e;
+	font-weight:100;
+	letter-spacing:3px;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+	
+}
+
+#apply a:hover{
+	
+	text-decoration:none;
+	color:#a1acb2;
+	
+}
+
+
+hr {
+	width:80px;
+	  display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #a1acb2;
+    margin: 1em 0;
+    padding: 0;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.whiteBox hr {
+	width:0px;
+	  display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #a1acb2;
+    margin: 1em 0;
+    padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/*#attendBounding:hover #attendBounding hr {
+	width:80px;
+
+}
+
+#sponsorBounding:hover ~ #sponsorBounding hr{
+		width:80px;
+
+}
+
+#scheduleBounding:hover + #scheduleBounding hr{
+		width:80px;
+
+}
+*/
 #cathacks2logo{
 	width:600px;
 	height:600px;
@@ -126,6 +193,84 @@ html, body{
         -o-user-select: none;
 }
 
+.whiteBox {
+    border-radius: 5px;
+	margin:0;
+    background: #fff;
+    width: 300px;
+    height: 300px; 
+	margin:15px;
+	padding-left:40px;
+	padding-right:40px;
+		-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+	overflow:hidden;
+	
+}
+.whiteBox:hover > .applyBoundingBox {
+ 	-ms-transform: translate(0px,-80px); /* IE 9 */
+   	-webkit-transform: translate(0px,-80px); /* Safari */
+    transform: translate(0px,-80px);	
+}
+
+.whiteBox:hover .innerContainer {
+	margin-top:-50px;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.whiteBox h1{
+	font-family:"Montserrat";
+	letter-spacing:6px;
+	font-weight:100;
+	/*line-height:300px;*/
+	text-align:center;
+	font-size:18px;	
+	color:#272727;
+	
+
+
+}
+.applyBoundingBox{
+	margin-top:60%;
+		-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+	
+}
+
+.whiteBox p{
+	font-family:"Montserrat";
+	font-weight:100 !important;
+	font-size:17px;	
+	color:#3f3f3f;
+	letter-spacing:1px;
+	text-align:center;
+}
+
+.whiteBoxContainer {
+	overflow:hidden;
+	height:150px;
+	
+}
+
+.innerContainer {
+	margin-top:150px;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;	
+}
+
 /*h1 {
 	font-size:65px;
 	-webkit-font-smoothing: antialiased;
@@ -135,15 +280,28 @@ html, body{
 
 }*/
 
+
 h1 {
-	font-size:50px;
+	font-size:47px;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Montserrat', sans-serif;
 	line-height: .3 !important;
-	color:#3f3f3f !important;
+	color:#4c4c4c;
 	font-weight:600;
 	margin-bottom:25px;
-	letter-spacing:6px;
+	letter-spacing:10px;
+
+}
+
+
+h2 {
+	font-size:34px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: .3 !important;
+	color:#4c4c4c;
+	font-weight:900;
+	margin-bottom:25px;
+	letter-spacing:5px;
 
 }
 
@@ -272,7 +430,7 @@ object:hover circle{
 
 #about {
 	margin:0;
-	background-color:#e0e0e0;
+	background-color:#efefef;
 	width:100%;
 	position:relative;
 	 min-height: 150%;  /* Fallback for browsers do NOT support vh unit */
@@ -357,17 +515,21 @@ object:hover circle{
   transform: scaleY(1);
 }
 .appSectionButton {
-	width:200px;
-	height:80px;
-	line-height:80px;
-	text-align:center;
-	font-size:16px;
-	-webkit-font-smoothing: antialiased;
-	font-family: "Montserrat", sans-serif;
+	
 	cursor: pointer;
-	font-weight:500;
-	letter-spacing:2px;
 
+}
+.appSectionButton {
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .sponsorCenter {
@@ -380,6 +542,7 @@ object:hover circle{
 }
 
 .horizontalcenter{
+	margin-top:30px;
 	margin-left:auto;
 	margin-right:auto;
 
@@ -483,6 +646,10 @@ object:hover circle{
 
 
 }
+
+#applyMobile{
+		display:none;
+	}
 @media (max-width: 1000px) {
 	#leftColumn{
 		margin-left:auto;
@@ -490,6 +657,13 @@ object:hover circle{
 	}
 	#contentDiv {
 		width:100%;
+	}
+	
+	#applyMobile{
+		display:block;
+	}
+	#applyDesktop {
+		display:none;	
 	}
 }
 
@@ -533,6 +707,9 @@ object:hover circle{
 		width:400px;
 		height:400px;
 		overflow-x:hidden;
+	}
+	#mlh-trust-badge {
+		display:none !important;	
 	}
 }
 @media (max-width: 455px) {
@@ -586,6 +763,16 @@ object:hover circle{
 	}
 	#leftColumn{
 		width:200px;
+	}
+	#mydiv {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    /* border: 1px solid #ccc; */	
 	}
 }
 
@@ -725,27 +912,26 @@ object:hover circle{
 
 
 .navbar li > a:before {
-   /*content: "";
+  content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #508dad;
+  background-color: #425965;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-    margin-top:46px;*/
+    margin-top:46px;
 
 }
 
 .navbar li > a:hover:before {
-  /*visibility: visible;
+  visibility: visible;
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);*/
-
+  transform: scaleX(1);
 
 }
 
@@ -837,25 +1023,26 @@ display:none;
 .navbar-nav > .active > a{
 	background-color:#fff;
 	opacity:.8;
- 	color:#24576c !important;
+ 	color:#6a838d !important;
 
 }
 
+
 .active:after {
-  /*   content: "";
+     content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #508dad;
+  background-color: #a1acb2;
   visibility: visible;
   transition: width 2s;
   -webkit-animation: widen .5s 1;
   -moz-animation: widen .5s 1;
   -ms-animation: widen .5s 1;
   -o-animation: widen .5s 1;
-  animation: widen 5.s 1;*/
+  animation: widen 5.s 1;
 }
 
 @-webkit-keyframes widen {
