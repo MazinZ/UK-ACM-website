@@ -136,9 +136,9 @@ h3 {
 	width:100%;
 	height:110%;
 	position:absolute;
-	z-index:100;	
-	
-	
+	z-index:100;
+
+
 }
 
 .container{
@@ -150,7 +150,7 @@ h3 {
 	position:relative !important;
 	  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-	
+
 }
 
 #mainMenu {
@@ -158,7 +158,7 @@ h3 {
 	margin-right:auto;
 	width:345px;
 	margin-bottom:40px;
-	
+
 }
 
 #mainMenu li {
@@ -170,7 +170,7 @@ h3 {
 	text-decoration: none;
 	margin-right:10px;
 	margin-left:10px;
-	
+
 }
 
 #mainMenu li:first-child {
@@ -236,14 +236,14 @@ canvas {
 	height:44px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:60px;	
+	margin-bottom:60px;
 		padding-right:25px;
 
-	
+
 }
 
 #teamContainer{
-	
+
 	width:750px;
 	margin-right:auto;
 	margin-left:auto;
@@ -306,14 +306,14 @@ content {
   left:50%;
   margin-top:-15px;
   margin-left:-118px;
-  
- 
+
+
 }
 
 .visible {
   float:left;
   overflow:hidden;
-  height:80px;   
+  height:80px;
 }
 
 
@@ -391,7 +391,7 @@ input, textarea {
 	font-family:"Ancillary";
 	font-style:italic;
 	font-size:14px;
-	
+
 }
 
 input {
@@ -423,13 +423,13 @@ textarea{
 }
 #team .button {
   width:150px;
-  height:50px;  
+  height:50px;
   line-height:68px;
 }
 
 /*.container .button {
   width:150px;
-  height:50px;  
+  height:50px;
   line-height:50px;
 }*/
 
@@ -455,10 +455,10 @@ textarea{
 }
 
 
-input:focus { 
+input:focus {
 	font-style:normal;
 }
-textarea:focus { 
+textarea:focus {
 	font-style:normal;
 }
 
@@ -488,11 +488,11 @@ h6 {
 	color:#3c4e63;
 	line-height:2;
 	font-size:12px;
-	font-family:"Oak";	
-	
+	font-family:"Oak";
+
 }
 .teamBox {
-	width:250px;	
+	width:250px;
 	height:150px;
 	float:left;
 	text-align:center;
@@ -502,14 +502,9 @@ h6 {
 }
 
 #mazin {
-	width:333px;	
-	
-	
-}
+	width:333px;
 
-#mobileMailingHeader{
-	display:none;	
-	
+
 }
 
 @media (min-width: 751px) {
@@ -521,53 +516,50 @@ h6 {
 
 @media (max-width: 750px) {
 	#overlay{
-		min-height:100% !important;	
+		min-height:100% !important;
 	}
 	#main{
-		min-height:100% !important;	
+		min-height:100% !important;
 	}
 	#mainWrapper{
-		min-height:100% !important;	
+		min-height:100% !important;
 	}
 	.container{
-		width:60%;	
+		width:60%;
 	}
 	.teamBox {
 		float:none;
 		margin-left:auto;
-		margin-right:auto;	
+		margin-right:auto;
 	}
 	#teamContainer {
 		width:250px;
 	}
 	#mazin {
-		width:250px;	
-		text-align:center;	
+		width:250px;
+		text-align:center;
 
 	}
 	.container{
-		overflow:visible;		
+		overflow:visible;
 	}
-	
+
 	#firstP{
 	}
 	#mobilepage{
 		display:inline-block;
-		
+
 	}
 	#mainWrapper {
 		border:none;
-	}	
+	}
 	.visible {
-		display:none;	
+		display:none;
 	}
-	#mobileMailingHeader{
-		display:block;	
-	}
-	
+
 	#teamContainer {
 		border-top: 1px solid #212326;
-		
+
 	}
 	h2 {
 		margin-top:50px;
@@ -576,30 +568,30 @@ h6 {
 
 @media (max-width: 400px) {
 	#overlay{
-		min-height:100% !important;	
+		min-height:100% !important;
 	}
 	#main{
-		min-height:100% !important;	
+		min-height:100% !important;
 	}
 	#mainWrapper{
-		min-height:100% !important;	
+		min-height:100% !important;
 	}
 	.container{
-		width:60%;	
+		width:60%;
 	}
 	.teamBox {
 		float:none;
 		margin-left:auto;
-		margin-right:auto;	
+		margin-right:auto;
 	}
 	#teamContainer {
 		width:250px;
 	}
 	p {
-		font-size:14px;	
+		font-size:14px;
 	}
 	#mainMenu li{
-		font-size:12px;	
+		font-size:12px;
 	}
 	#mainMenu li:first-child{
 				padding-left:11px;
@@ -608,10 +600,10 @@ h6 {
 	#mainMenu {
 		width:281px;
 		padding:10px;
-		
+
 	}
 	#header{
-		width:230px;	
+		width:230px;
 		padding-right:0px;
 
 	}
@@ -619,7 +611,7 @@ h6 {
 		margin-left:0;
 		margin-right:0;
 	}
-	
-	
+
+
 
 }
